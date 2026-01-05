@@ -242,21 +242,32 @@ def generate_ai_advice(user_answers_text):
             }
         )
         
-        with st.spinner('Chuyên gia AI đang phân tích hồ sơ của bạn...'):
-            completion = client.chat.completions.create(
-                model="google/gemini-2.0-flash-exp:free", # Sử dụng model ổn định hơn
-                messages=[
-                    {
-                        "role": "system",
-                        "content": system_prompt
-                    },
-                    {
-                        "role": "user",
-                        "content": f"[CÂU TRẢ LỜI CỦA HỌC SINH]\n{user_answers_text}\n\nLưu ý: Hãy trả lời hoàn toàn bằng Tiếng Việt."
-                    }
-                ]
-            )
-            return completion.choices[0].message.content
+        max_retries = 5
+        retry_delay = 2
+
+        for attempt in range(max_retries):
+            try:
+                with st.spinner(f'Chuyên gia AI đang phân tích hồ sơ của bạn... (Lần thử {attempt + 1})'):
+                    completion = client.chat.completions.create(
+                        model="google/gemini-2.0-flash-exp:free", # Sử dụng model ổn định hơn
+                        messages=[
+                            {
+                                "role": "system",
+                                "content": system_prompt
+                            },
+                            {
+                                "role": "user",
+                                "content": f"[CÂU TRẢ LỜI CỦA HỌC SINH]\n{user_answers_text}\n\nLưu ý: Hãy trả lời hoàn toàn bằng Tiếng Việt."
+                            }
+                        ]
+                    )
+                    return completion.choices[0].message.content
+            except Exception as e:
+                if "429" in str(e) and attempt < max_retries - 1:
+                    time.sleep(retry_delay)
+                    retry_delay *= 2  # Exponential backoff
+                    continue
+                raise e
             
     except Exception as e:
         return f"⚠️ **Đã xảy ra lỗi khi gọi OpenRouter AI:**\n\n{str(e)}"

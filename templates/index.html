@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPTU Quy Nhơn Career Chatbot</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎓 Hướng Nghiệp FPTU Quy Nhơn AI Campus</h1>
+        
+        <h2>🧩 Trắc nghiệm tính cách & Sở thích</h2>
+        <p>Hãy chọn phương án mô tả đúng nhất về bạn.</p>
+        
+        <form action="/submit" method="post" onsubmit="showLoading()">
+            {% for q in questions %}
+            <div class="question-box">
+                <div class="question-text">Câu {{ loop.index }}: {{ q.text }}</div>
+                <div class="options-container">
+                    {% for opt in q.options %}
+                    <label class="option-label">
+                        <input type="radio" name="q_{{ q.id }}" value="{{ opt.label }}" required>
+                        <span>{{ opt.label }}</span>
+                    </label>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endfor %}
+            
+            <button type="submit">Xem kết quả tư vấn ✨</button>
+        </form>
+    </div>
+
+    <div id="loading">
+        <div class="spinner"></div>
+        <div class="loading-text">Chuyên gia AI đang phân tích hồ sơ của bạn...</div>
+    </div>
+
+    <script>
+        function showLoading() {
+            document.getElementById('loading').style.display = 'flex';
+        }
+    </script>
+</body>
+</html>
