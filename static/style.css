@@ -1,5 +1,5 @@
 /* Import Font */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;700&display=swap');
 
 /* Tổng thể */
 body {
@@ -20,7 +20,7 @@ body {
 
 /* Tiêu đề chính */
 h1 {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background: -webkit-linear-gradient(45deg, #FF6600, #FF9E00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -39,7 +39,7 @@ h2, h3 {
     border-left: 5px solid #FF6600;
     padding-left: 15px;
     margin-top: 20px;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Form Container */
@@ -80,7 +80,7 @@ form, .result-box {
     gap: 15px;
     justify-content: space-between; /* Căn đều các nút */
 }
-    
+
 .option-label {
     cursor: pointer;
     background: rgba(255, 255, 255, 0.05);
@@ -126,7 +126,7 @@ button, .btn {
     width: 100%;
     box-sizing: border-box;
     box-shadow: 0 4px 15px rgba(255, 69, 0, 0.3);
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     cursor: pointer;
     display: block;
     text-align: center;
@@ -172,7 +172,7 @@ button:hover, .btn:hover {
 .loading-text {
     margin-top: 20px;
     color: #FF6600;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
 }
 
