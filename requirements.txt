@@ -2,7 +2,7 @@ streamlit
 pandas
 openai
 python-dotenv
-
+pyngrok
 fastapi
 uvicorn
 jinja2
