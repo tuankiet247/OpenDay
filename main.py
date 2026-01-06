@@ -59,7 +59,7 @@ async def generate_ai_advice(user_answers_text):
             base_url="https://openrouter.ai/api/v1",
             api_key=api_key,
             default_headers={
-                "HTTP-Referer": "http://localhost:8000",
+                "HTTP-Referer": "http://localhost:5000",
                 "X-Title": "FPTU Career Chatbot",
             }
         )
@@ -70,7 +70,7 @@ async def generate_ai_advice(user_answers_text):
         for attempt in range(max_retries):
             try:
                 completion = await client.chat.completions.create(
-                    model="google/gemini-2.5-flash-lite", # Thay đổi model sang bản ổn định hơn
+                    model="qwen/qwen-2.5-vl-7b-instruct:free", 
                     messages=[
                         {
                             "role": "system",
@@ -78,9 +78,15 @@ async def generate_ai_advice(user_answers_text):
                         },
                         {
                             "role": "user",
-                            "content": f"[CÂU TRẢ LỜI CỦA HỌC SINH]\n{user_answers_text}\n\nLưu ý: Hãy trả lời hoàn toàn bằng Tiếng Việt."
+                            "content": f"[CÂU TRẢ LỜI CỦA HỌC SINH]\n{user_answers_text}\n\nLưu ý: Hãy trả lời hoàn toàn bằng Tiếng Việt. Đảm bảo phản hồi đầy đủ cả 4 phần trong định dạng đầu ra."
                         }
-                    ]
+                    ],
+                    temperature=0.7,
+                    top_p=0.9,
+                    max_tokens=3000, 
+                    extra_body={
+                        "repetition_penalty": 1.1
+                    }
                 )
                 return completion.choices[0].message.content
             except Exception as e:
@@ -151,4 +157,4 @@ async def submit_quiz(request: Request):
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
+    uvicorn.run("main:app", host="0.0.0.0", port=5000, reload=True)
