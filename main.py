@@ -45,7 +45,7 @@ async def generate_ai_advice(user_answers_text):
     """
     Call AI to generate advice using OpenRouter.
     """
-    system_prompt = load_system_prompt()
+    system_prompt = await asyncio.to_thread(load_system_prompt)
     
     # Get API Key
     api_key = os.getenv("OPENROUTER_API_KEY")
@@ -104,7 +104,7 @@ async def generate_ai_advice(user_answers_text):
 
 @app.get("/", response_class=HTMLResponse)
 async def read_root(request: Request):
-    all_questions = load_questions()
+    all_questions = await asyncio.to_thread(load_questions)
     # Randomly select 15 questions if available
     if len(all_questions) >= 15:
         selected_questions = random.sample(all_questions, 15)
@@ -125,7 +125,7 @@ async def submit_quiz(request: Request):
     # we need to look up the text.
     # To do this efficiently, let's load all questions and create a map.
     
-    all_questions = load_questions()
+    all_questions = await asyncio.to_thread(load_questions)
     question_map = {str(q['id']): q['text'] for q in all_questions}
     
     answers_text = ""
@@ -148,7 +148,7 @@ async def submit_quiz(request: Request):
     advice_markdown = await generate_ai_advice(answers_text)
     
     # Convert Markdown to HTML for display
-    advice_html = markdown.markdown(advice_markdown)
+    advice_html = await asyncio.to_thread(markdown.markdown, advice_markdown)
     
     return templates.TemplateResponse("result.html", {
         "request": request,
