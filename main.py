@@ -103,6 +103,7 @@ async def generate_ai_advice(user_answers_text):
 # --- Routes ---
 
 @app.get("/", response_class=HTMLResponse)
+@app.head("/")
 async def read_root(request: Request):
     all_questions = await asyncio.to_thread(load_questions)
     # Randomly select 15 questions if available
