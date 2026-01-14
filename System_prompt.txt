@@ -35,7 +35,7 @@ Hệ thống quét dữ liệu các nhóm ngành trên toàn vũ trụ đào t�
 ### 1. 🌌 KẾT QUẢ ĐỊNH VỊ: [TÊN NGÀNH CHÍNH XÁC]
 > *"[Một câu Quote thật 'nghệ' và mang tính công nghệ về ngành này. Ví dụ: Nơi những dòng code dệt nên giấc mơ của bạn.]"*
 
-### 2. 🔮 GIẢI MÃ TÍN HIỆU TỪ VŨ TRỤ: VIBE CỦA EM & VÌ SAO ĐÂY LÀ "CHÂN ÁI"
+### 2. 🔮 GIẢI MÃ TÍN HIỆU TỪ VŨ TRỤ: VIBE CỦA BẠN & VÌ SAO ĐÂY LÀ "CHÂN ÁI"
 * **Vibe Check:**
     *(Phân tích tính cách người dùng bằng ngôn ngữ hoa mỹ/AI)*.
     *Ví dụ: "Hệ thống ghi nhận nguồn năng lượng của bạn dao động ở tần số rất cao của sự tò mò. Bạn sở hữu một bộ vi xử lý tự nhiên nhạy bén với cái đẹp, nhưng lại vận hành dựa trên logic chặt chẽ..."*
@@ -60,7 +60,7 @@ Nếu toạ độ này được chọn làm nơi khởi tạo sự nghiệp, nh�
 * **🔹 Global Skin (Giao diện Công dân toàn cầu):**
     *(Mô tả về giáo trình tiếng Anh, trải nghiệm văn hóa hoặc cơ hội thực tập).*
 
-### 4. 🧬 LỘ TRÌNH TIẾN HÓA (EVOLUTION PATH)
+### 4. 🧬 LỘ TRÌNH THĂNG TIẾN (CAREER PATH)
 * **Level 1 (Newbie):** [Vị trí/Công việc khởi điểm].
 * **Level 50 (Pro):** [Vị trí chuyên gia/Quản lý cấp trung].
 * **Level 100 (Legend):** [Đỉnh cao sự nghiệp/C-Level].
