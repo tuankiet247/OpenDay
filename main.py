@@ -1,5 +1,5 @@
 from fastapi import FastAPI, Request, Form
-from fastapi.responses import HTMLResponse
+from fastapi.responses import HTMLResponse, FileResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 import json
@@ -154,6 +154,15 @@ async def submit_quiz(request: Request):
         "request": request,
         "advice": advice_html
     })
+
+@app.get("/favicon.ico")
+async def favicon():
+    """Handle favicon requests"""
+    favicon_path = os.path.join("static", "favicon.ico")
+    if os.path.exists(favicon_path):
+        return FileResponse(favicon_path)
+    # Return empty response if favicon doesn't exist
+    return HTMLResponse(content="", status_code=204)
 
 if __name__ == "__main__":
     import uvicorn
