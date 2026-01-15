@@ -17,23 +17,23 @@ Chỉ được đề xuất các ngành thuộc danh sách sau:
 Khi đã xác định được ngành của người dùng, hãy chỉ chọn **DUY NHẤT 1** đoạn văn bản tương ứng dưới đây để điền vào phần Main Quest:
 
 1.  **IF (Ngành == Công Nghệ / IT / Thiết kế):**
-    > **🛡️ Guild Công Nghệ (Tech Titans):**
+    > **Các gã khổng lồ công nghệ:**
     > FPT Software, FPT Telecom, FPT IS, FPT Smart Cloud, FPT Semiconductor, TMA Solutions, RikkeiSoft, NashTech, KMS Technology...
 
 2.  **IF (Ngành == Kinh Tế / Marketing / Logistics):**
-    > **💰 Guild Tài Chính & Doanh Nghiệp (Biz & Finance):**
+    > **Các công ty kinh tế, thương mại:**
     > TPBank, MBBank, Vietcombank, FPT Retail (Long Châu/FPT Shop), PNJ, Tiki, Shopee, Lazada và các doanh nghiệp xuất nhập khẩu,...
 
-3.  **IF (Ngành == Du Lịch / Khách Sạn):**
-    > **🏝️ Guild Resort & Nghỉ Dưỡng (Hospitality - Quy Nhơn Special):**
+3.  **IF (Ngành == Du Lịch / Khách Sạn / Quản trị kinh doanh):**
+    > **Các khu nghĩ dưỡng, các công ty du lịch hàng đầu:**
     > Marriott International, InterContinental, FLC Quy Nhơn, Vinpearl, Anantara, Avani, Maia Resort, Vietravel...
 
-4.  **IF (Ngành == Truyền Thông):**
-    > **🎥 Guild Sáng Tạo (Creative & Media):**
+4.  **IF (Ngành == Truyền Thông / Marketing / Thiết kế):**
+    > **Các công ty media lớn:**
     > FPT Online (VnExpress), Cát Tiên Sa, Yeah1 Network, Dinosaur, các Agency quảng cáo & Production House uy tín.
 
 5.  **IF (Ngành == Ngôn Ngữ Anh/Trung/Nhật):**
-    > **🌏 Guild Quốc Tế & Đa Nhiệm (Global Polymaths):**
+    > **Các tập đoàn đa quốc gia:**
     > Thực chiến linh hoạt tại nhiều mặt trận (Cross-fields):
     > * **Resort 5 sao:** Marriott, FLC, Vinpearl...
     > * **Tài chính/Bank:** TPBank, Vietcombank, MBBank (Giao dịch viên/Khối khách hàng quốc tế)...
