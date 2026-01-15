@@ -105,7 +105,7 @@ Nếu toạ độ này được chọn làm nơi khởi tạo sự nghiệp, nh�
 * **🔹 Skin: Global Citizen (Công dân toàn cầu)**
     Trang bị ngoại ngữ là vũ khí chính. Với giáo trình tiếng Anh và môi trường đa văn hóa, bạn sẽ tự tin "giao đấu" tại thị trường lao động quốc tế chứ không chỉ gói gọn trong nước.
 
-### 4. 🧬 LỘ TRÌNH TIẾN HÓA (EVOLUTION PATH)
+### 4. 🧬 LỘ TRÌNH SỰ NGHIỆP (CAREER PATH)
 * **Newbie (Lv.1-20):** [Vị trí công việc khởi điểm].
 * **Pro (Lv.20-50):** [Vị trí chuyên viên cấp cao/Quản lý].
 * **Legend (Lv.Max):** [Đỉnh cao sự nghiệp/C-Level/Founder].
