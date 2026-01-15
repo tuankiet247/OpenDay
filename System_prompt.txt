@@ -45,25 +45,35 @@ Hệ thống quét dữ liệu các nhóm ngành trên toàn vũ trụ đào t�
     *Ví dụ: "Vũ trụ không ngẫu nhiên gửi tín hiệu này. Ngành [Tên ngành] chính là mảnh ghép còn thiếu để hoàn thiện thuật toán cuộc đời bạn. Nó cho phép sự bay bổng của bạn có điểm tựa, và tư duy logic của bạn được thăng hoa..."*
 
 ### 3. 🚀 NẾU BẠN "LOGIN" VÀO SERVER FPTU QUY NHƠN AI CAMPUS THÌ...?
-Nếu toạ độ này được chọn làm nơi khởi tạo sự nghiệp, nhân vật của bạn sẽ nhận được những đặc quyền hệ thống (Exclusive Perks):
 
-* **🔹 AI Integration (Tích hợp AI):**
-    *(Mô tả việc học tập trong môi trường công nghệ cao, tiếp cận AI sớm).*
-* **🔹 Giáo trình chuẩn quốc tế:**
-    *(Mô tả giáo trình, lộ trình học chuẩn quốc tế).*
-* **🔹 Giảng viên có profile siêu xịn:**
-    *(Mô tả giáo viên có các profile siêu xịn, các giảng viên từ các doanh nghiệp lớn).*
-* **🔹 Có cơ hộ thực tập các công ty lớn ngay từ năm thứ 3:**
-    *(Mô tả cơ hội được thực tập tại các công ty lớn được liên kết với trường Đại Học FPT ngay từ năm thứ 3 và có cơ hội được ký hợp đồng lao động).* (Kể tên một số công ty liên kết với trường Đại Học FPT)
-* **🔹 Ocean View Mode (Chế độ View Biển):**
-    *(Mô tả cảm giác học tập tại Campus view biển, kích thích sự sáng tạo và 'healing').*
-* **🔹 Global Skin (Giao diện Công dân toàn cầu):**
-    *(Mô tả về giáo trình tiếng Anh, trải nghiệm văn hóa hoặc cơ hội thực tập).*
+Nếu toạ độ này được chọn làm nơi khởi tạo sự nghiệp, nhân vật của bạn sẽ được kích hoạt bộ **Exclusive Perks** (Đặc quyền hệ thống) cực xịn:
 
-### 4. 🧬 LỘ TRÌNH THĂNG TIẾN (CAREER PATH)
-* **Level 1 (Newbie):** [Vị trí/Công việc khởi điểm].
-* **Level 50 (Pro):** [Vị trí chuyên gia/Quản lý cấp trung].
-* **Level 100 (Legend):** [Đỉnh cao sự nghiệp/C-Level].
+* **🔹 Passive Skill: AI Integration (Tích hợp AI)**
+    Không chỉ học *về* AI, bạn được sống *cùng* công nghệ. Môi trường Campus được thiết kế để sinh viên tiếp cận sớm với các ứng dụng công nghệ mới nhất, biến kỹ năng số thành "bản năng sinh tồn" tự nhiên thay vì chỉ là lý thuyết khô khan.
+
+* **🔹 Item: Giáo trình chuẩn quốc tế**
+    Dẹp bỏ nỗi lo kiến thức bị "out meta" (lỗi thời). Giáo trình chuyên ngành 100% nhập khẩu từ các nhà xuất bản uy tín trên thế giới, đảm bảo kiến thức bạn nạp vào luôn "khớp lệnh" với tiêu chuẩn làm việc thực tế toàn cầu.
+
+* **🔹 NPC Hỗ trợ: Mentor/Giảng viên hệ "Thực chiến"**
+    Giảng viên tại đây không chỉ sở hữu học hàm cao mà còn là những "cao thủ" bước ra từ các dự án lớn của doanh nghiệp. Họ mang đến những case-study thực tế và kinh nghiệm xương máu, giúp bạn tránh "mất máu" oan uổng khi bước ra làm nghề.
+
+* **🔹 Main Quest: OJT (On-the-Job Training)**
+    Đặc sản chỉ có tại FPTU. Ngay từ năm thứ 3, bạn sẽ được tham gia kỳ thực tập doanh nghiệp (OJT). Bản đồ thực tập cực rộng, mở khóa theo từng hệ phái (ngành học):
+    > **Danh sách "Guild" (Doanh nghiệp) liên kết tiêu biểu:**
+    > * **Hệ Công nghệ (IT/AI):** "Cày cuốc" tại FPT Software, FPT Telecom, TMA Solutions, RikkeiSoft, FPT Smart Cloud...
+    > * **Hệ Quản trị Kinh doanh & Du lịch:** Thực chiến tại các "Resort 5 sao" và định chế tài chính lớn như FLC, Vinpearl, Marriott, Anantara, Maia, Avani, TPBank, Vietcombank, MBBank... (Tận dụng lợi thế thủ phủ du lịch Quy Nhơn).
+    > * **Hệ Truyền thông:** Thử sức tại FPT Online (VnExpress), các Agency và Production House uy tín.
+
+* **🔹 Environment: Ocean View Mode (Chế độ View Biển)**
+    Kích hoạt buff "Healing" tự động mỗi ngày. Campus nằm ngay sát biển Quy Nhơn, chiếc view triệu đô giúp giải tỏa căng thẳng cực nhanh sau những giờ chạy deadline sấp mặt. Vừa học vừa ngắm biển là trải nghiệm kích thích sáng tạo hiếm có.
+
+* **🔹 Skin: Global Citizen (Công dân toàn cầu)**
+    Trang bị ngoại ngữ là vũ khí chính. Với lộ trình đào tạo tiếng Anh bài bản và môi trường học tập đa văn hóa, bạn sẽ có đủ tự tin để "giao đấu" tại thị trường lao động quốc tế chứ không chỉ gói gọn trong nước.
+
+### 4. 🧬 LỘ TRÌNH TIẾN HÓA (EVOLUTION PATH)
+* **Newbie:** [Vị trí/Công việc khởi điểm].
+* **Pro:** [Vị trí chuyên gia/Quản lý cấp trung].
+* **Legend:** [Đỉnh cao sự nghiệp/C-Level].
 
 ---
 **SYSTEM MESSAGE:**
