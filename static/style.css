@@ -3,9 +3,9 @@
 
 /* Tổng thể */
 body {
-    /* Background image */
-    background: #0a0e27 url('/static/background.jpg') no-repeat center center fixed;
-    background-size: cover;
+    /* Background gradient */
+    background: linear-gradient(135deg, #0d2818 0%, #1a3d2e 30%, #0a0a0a 60%, #2d1a0d 85%, #FF6600 100%);
+    background-attachment: fixed;
     color: #e0e0e0;
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -81,8 +81,7 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 3px;
-    filter: drop-shadow(0 0 25px rgba(255, 102, 0, 0.9))
-            drop-shadow(0 0 50px rgba(255, 102, 0, 0.6))
+    filter: drop-shadow(0 0 10px rgba(255, 102, 0, 0.5))
             drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
     margin-bottom: 30px;
     animation: shimmer 3s linear infinite;
@@ -114,12 +113,10 @@ h2, h3 {
 /* Form Container */
 form, .result-box {
     background: rgba(50, 80, 120, 0.55);
-    border: 2px solid rgba(255, 102, 0, 0.9);
+    border: 2px solid rgba(255, 102, 0, 0.5);
     border-radius: 20px;
     padding: 35px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2),
-                0 0 120px rgba(255, 102, 0, 0.5),
-                inset 0 0 60px rgba(255, 102, 0, 0.2);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(30px) saturate(220%) brightness(1.6) contrast(1.1);
     -webkit-backdrop-filter: blur(30px) saturate(220%) brightness(1.6) contrast(1.1);
     position: relative;
@@ -165,175 +162,178 @@ form, .result-box {
     font-weight: 800;
     color: #FF6600;
     margin-bottom: 18px;
-    text-shadow: 0 0 20px rgba(255, 102, 0, 1),
-                 0 0 40px rgba(255, 102, 0, 0.6),
-                 0 2px 4px rgba(0, 0, 0, 0.5);
     padding: 0;
     background: none;
     border: none;
     border-radius: 0;
 }
 
-/* Dropdown Select Customization */
+/* Radio Buttons Customization */
 .options-container {
     display: flex;
-    flex-direction: column;
-    padding: 12px 0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 10px 0;
 }
 
-.option-select {
-    width: 100%;
-    padding: 18px 24px;
-    padding-right: 55px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.05rem;
-    font-weight: 600;
-    color: #FFFFFF;
-    background: linear-gradient(145deg, 
-                                rgba(70, 100, 140, 0.8), 
-                                rgba(60, 90, 130, 0.9));
-    border: 3px solid rgba(255, 140, 0, 0.7);
-    border-radius: 16px;
-    backdrop-filter: blur(15px) brightness(1.15) saturate(1.2);
-    -webkit-backdrop-filter: blur(15px) brightness(1.15) saturate(1.2);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35),
-                0 3px 10px rgba(0, 0, 0, 0.25),
-                inset 0 2px 0 rgba(255, 255, 255, 0.2),
-                inset 0 -2px 0 rgba(0, 0, 0, 0.25),
-                0 0 40px rgba(255, 140, 0, 0.3);
+.option-label {
     cursor: pointer;
+    background: linear-gradient(145deg, 
+                                rgba(70, 100, 140, 0.75), 
+                                rgba(60, 90, 130, 0.85));
+    padding: 16px 14px;
+    border-radius: 18px;
+    border: 2.5px solid rgba(255, 140, 0, 0.6);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    outline: none;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 24 24' fill='none' stroke='%23FF8C00' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 18px center;
-    background-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex: 1;
+    text-align: center;
+    min-width: 0;
     position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(12px) brightness(1.1);
+    -webkit-backdrop-filter: blur(12px) brightness(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3),
+                0 2px 8px rgba(0, 0, 0, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.15),
+                inset 0 -1px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* Arrow animation */
-.option-select::after {
+.option-label::before {
     content: '';
     position: absolute;
-    right: 18px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 24px;
-    height: 24px;
+    inset: 0;
+    background: linear-gradient(110deg, 
+                                transparent 0%, 
+                                transparent 40%,
+                                rgba(255, 255, 255, 0.15) 50%, 
+                                transparent 60%,
+                                transparent 100%);
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
     pointer-events: none;
-    transition: transform 0.3s ease;
 }
 
-.option-select:hover {
-    background: linear-gradient(145deg, 
-                                rgba(90, 120, 160, 0.9), 
-                                rgba(75, 105, 145, 0.95));
-    border-color: rgba(255, 160, 50, 1);
-    box-shadow: 0 10px 35px rgba(255, 140, 0, 0.5),
-                0 5px 15px rgba(0, 0, 0, 0.35),
-                0 0 60px rgba(255, 140, 0, 0.4),
-                inset 0 2px 0 rgba(255, 255, 255, 0.3),
-                inset 0 -2px 0 rgba(0, 0, 0, 0.3);
-    transform: translateY(-3px);
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+.option-label:hover::before {
+    transform: translateX(100%);
 }
 
-.option-select:focus {
-    border-color: #FF8C00;
-    border-width: 3px;
-    background: linear-gradient(145deg, 
-                                rgba(85, 115, 155, 0.95), 
-                                rgba(70, 100, 140, 1));
-    box-shadow: 0 0 60px rgba(255, 140, 0, 0.9),
-                0 0 100px rgba(255, 102, 0, 0.6),
-                0 10px 30px rgba(0, 0, 0, 0.4),
-                inset 0 0 50px rgba(255, 200, 100, 0.25),
-                inset 0 3px 0 rgba(255, 255, 255, 0.35);
-    transform: translateY(-2px);
-}
-
-.option-select option {
-    background: rgba(35, 55, 85, 0.98);
-    color: #FFFFFF;
-    padding: 14px;
-    font-weight: 600;
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-.option-select option:hover {
-    background: linear-gradient(145deg, 
-                                rgba(255, 140, 0, 0.4), 
-                                rgba(255, 110, 0, 0.35));
-}
-
-.option-select option:checked {
-    background: linear-gradient(145deg, 
-                                rgba(255, 140, 0, 0.8), 
-                                rgba(255, 110, 0, 0.85));
-    color: #FFFFFF;
-    font-weight: 800;
-}
-
-/* Invalid state (nothing selected) */
-.option-select:invalid {
-    color: rgba(255, 255, 255, 0.65);
-    font-style: italic;
-}
-
-/* Valid state (option selected) */
-.option-select:valid {
-    background: linear-gradient(145deg, 
-                                rgba(255, 140, 0, 0.75), 
-                                rgba(255, 110, 0, 0.8));
-    border-color: #FF8C00;
-    border-width: 3px;
+.option-label span {
+    white-space: normal;
+    line-height: 1.3;
     color: #FFFFFF;
     font-weight: 700;
-    box-shadow: 0 0 50px rgba(255, 140, 0, 0.8),
-                0 8px 25px rgba(0, 0, 0, 0.35),
-                0 0 80px rgba(255, 102, 0, 0.5),
-                inset 0 0 40px rgba(255, 220, 150, 0.25),
-                inset 0 3px 0 rgba(255, 255, 255, 0.4),
-                inset 0 -3px 0 rgba(0, 0, 0, 0.3);
-    text-shadow: 0 0 15px rgba(255, 255, 255, 0.6),
-                 0 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 0.95rem;
+    text-shadow: none;
+    position: relative;
+    z-index: 1;
+}
+
+.option-label:hover {
+    background: linear-gradient(145deg, 
+                                rgba(90, 120, 160, 0.85), 
+                                rgba(70, 100, 140, 0.9));
+    border-color: rgba(255, 160, 50, 0.9);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4),
+                inset 0 1px 0 rgba(255, 255, 255, 0.25),
+                inset 0 -1px 0 rgba(0, 0, 0, 0.3);
+    transform: translateY(-4px) scale(1.03);
+}
+
+.option-label:hover::before {
+    transform: translateX(100%);
+}
+
+.option-label input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2.5px solid rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3),
+                inset 0 1px 2px rgba(255, 255, 255, 0.3);
+}
+
+.option-label input[type="radio"]:checked {
+    background: linear-gradient(135deg, #FF8C00, #FF6600);
+    border-color: #FFFFFF;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4),
+                inset 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+.option-label input[type="radio"]:checked::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+}
+
+/* Selected option highlight */
+.option-label:has(input[type="radio"]:checked) {
+    background: linear-gradient(145deg, 
+                                rgba(255, 140, 0, 0.7), 
+                                rgba(255, 110, 0, 0.75));
+    border-color: #FF8C00;
+    border-width: 3px;
+    box-shadow: 0 0 60px rgba(255, 140, 0, 0.9),
+                0 0 100px rgba(255, 102, 0, 0.5),
+                0 8px 25px rgba(0, 0, 0, 0.4),
+                inset 0 0 50px rgba(255, 200, 100, 0.25),
+                inset 0 2px 0 rgba(255, 255, 255, 0.4),
+                inset 0 -2px 0 rgba(0, 0, 0, 0.3);
+    transform: scale(1.06);
     animation: pulseGlow 2.5s ease-in-out infinite;
+}
+
+.option-label:has(input[type="radio"]:checked)::before {
+    opacity: 1;
+}
+
+.option-label:has(input[type="radio"]:checked) span {
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 0.98rem;
+    text-shadow: none;
 }
 
 @keyframes pulseGlow {
     0%, 100% {
-        box-shadow: 0 0 50px rgba(255, 140, 0, 0.8),
-                    0 8px 25px rgba(0, 0, 0, 0.35),
-                    0 0 80px rgba(255, 102, 0, 0.5),
-                    inset 0 0 40px rgba(255, 220, 150, 0.25),
-                    inset 0 3px 0 rgba(255, 255, 255, 0.4),
-                    inset 0 -3px 0 rgba(0, 0, 0, 0.3);
+        box-shadow: 0 0 60px rgba(255, 140, 0, 0.9),
+                    0 0 100px rgba(255, 102, 0, 0.5),
+                    0 8px 25px rgba(0, 0, 0, 0.4),
+                    inset 0 0 50px rgba(255, 200, 100, 0.25),
+                    inset 0 2px 0 rgba(255, 255, 255, 0.4),
+                    inset 0 -2px 0 rgba(0, 0, 0, 0.3);
     }
     50% {
-        box-shadow: 0 0 60px rgba(255, 140, 0, 1),
-                    0 10px 30px rgba(0, 0, 0, 0.4),
-                    0 0 100px rgba(255, 102, 0, 0.7),
-                    inset 0 0 50px rgba(255, 220, 150, 0.35),
+        box-shadow: 0 0 70px rgba(255, 140, 0, 1),
+                    0 0 120px rgba(255, 102, 0, 0.7),
+                    0 10px 30px rgba(0, 0, 0, 0.5),
+                    inset 0 0 60px rgba(255, 220, 150, 0.35),
                     inset 0 3px 0 rgba(255, 255, 255, 0.5),
                     inset 0 -3px 0 rgba(0, 0, 0, 0.4);
     }
 }
 
-/* Radio Buttons Customization (fallback - nếu cần) */
-.options-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap; /* Không xuống dòng trên PC */
-    gap: 15px;
-    justify-content: space-between; /* Căn đều các nút */
-}
-
-.option-label {
-    cursor: pointer;
+/* Buttons */
+button, .btn {
     background: rgba(255, 255, 255, 0.25);
     padding: 12px 16px;
     border-radius: 10px;
@@ -367,10 +367,8 @@ form, .result-box {
 .option-label span {
     white-space: normal;
     line-height: 1.3;
-    color: #FF8C00;
+    color: #FFFFFF;
     font-weight: 700;
-    text-shadow: 0 0 10px rgba(255, 140, 0, 0.6),
-                 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .option-label:hover {
@@ -403,11 +401,8 @@ form, .result-box {
 }
 
 .option-label:has(input[type="radio"]:checked) span {
-    color: #FF4500;
+    color: #FFFFFF;
     font-weight: 900;
-    text-shadow: 0 0 20px rgba(255, 69, 0, 1),
-                 0 0 40px rgba(255, 140, 0, 0.8),
-                 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 
 /* Buttons */
@@ -584,19 +579,30 @@ button:hover::after, .btn:hover::after {
     }
 
     .options-container {
+        flex-direction: column;
+        gap: 10px;
         padding: 10px 0;
     }
 
-    .option-select {
-        font-size: 1rem;
-        padding: 16px 20px;
-        padding-right: 50px;
-        background-size: 20px;
-        background-position: right 15px center;
+    .option-label {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 12px 15px;
+        font-size: 0.95rem;
+        justify-content: flex-start;
+        text-align: left;
     }
 
-    .option-select:hover {
+    .option-label span {
+        white-space: normal;
+    }
+
+    .option-label:hover {
         transform: none;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3),
+                    0 2px 8px rgba(0, 0, 0, 0.2),
+                    inset 0 1px 0 rgba(255, 255, 255, 0.15),
+                    inset 0 -1px 0 rgba(0, 0, 0, 0.2);
     }
 
     button, .btn {
