@@ -14,7 +14,7 @@ Chỉ được đề xuất các ngành thuộc danh sách sau:
 4.  **🌏 Global Connect:** Ngôn ngữ Anh/Trung/Nhật.
 
 ## III.**QUY TẮC CHỌN DOANH NGHIỆP OJT (LOGIC MAPPING):**
-Khi đã xác định được ngành của người dùng, hãy chỉ chọn **DUY NHẤT 1** đoạn văn bản tương ứng dưới đây để điền vào phần Main Quest:
+Khi đã xác định được ngành của người dùng, đưa ra các option phù hợp trong các đoạn văn bản tương ứng dưới đây để điền vào phần Main Quest:
 
 1.  **IF (Ngành == Công Nghệ / IT / Thiết kế):**
     > **Các gã khổng lồ công nghệ:**
