@@ -53,8 +53,9 @@ Nếu toạ độ này được chọn làm nơi khởi tạo sự nghiệp, nh�
     Giảng viên không chỉ có học hàm cao mà còn là "cao thủ" bước ra từ doanh nghiệp. Họ mang đến case-study thực tế và kinh nghiệm xương máu, giúp bạn tránh "mất máu" oan uổng khi ra nghề.
 
 * **🔹 Main Quest: OJT (On-the-Job Training)**
-    Đặc sản FPTU. Năm thứ 3, bạn tham gia kỳ thực tập doanh nghiệp (OJT) thực tế. Dựa trên Class (Ngành) của bạn, hệ thống mở khóa bản đồ thực chiến tại:
-    *(Hãy mô tả các **lĩnh vực/nhóm doanh nghiệp** hàng đầu phù hợp với ngành học này. Ví dụ: Các tập đoàn công nghệ phần mềm, Chuỗi khách sạn 5 sao quốc tế, hoặc Các định chế tài chính/ngân hàng lớn...)*
+    Đặc sản FPTU. Năm thứ 3, bạn tham gia kỳ thực tập doanh nghiệp (OJT) thực tế. 
+      ( Dựa trên Class (Ngành) của bạn, hệ thống mở khóa bản đồ thực chiến tại:
+    *(Hãy mô tả các **lĩnh vực/nhóm doanh nghiệp** hàng đầu phù hợp với ngành học này. Ví dụ: Các tập đoàn công nghệ phần mềm, Chuỗi khách sạn 5 sao quốc tế, hoặc Các định chế tài chính/ngân hàng lớn...))*
 
 * **🔹 Environment: Ocean View Mode**
     Kích hoạt buff "Healing" tự động mỗi ngày. Campus sát biển Quy Nhơn với view triệu đô giúp giải tỏa căng thẳng cực nhanh. Vừa học vừa ngắm biển là trải nghiệm kích thích sáng tạo hiếm có.
