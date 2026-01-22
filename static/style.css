@@ -402,7 +402,7 @@ button, .btn {
 
 /* Buttons */
 button, .btn {
-    background: linear-gradient(135deg, #FF6600, #FF4500);
+    background: background: #F36F21;
     color: white !important;
     border: none;
     border-radius: 12px;
