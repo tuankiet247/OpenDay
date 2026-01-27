@@ -541,18 +541,20 @@ async def read_root(request: Request):
     })
 
 @app.post("/quiz", response_class=HTMLResponse)
-async def start_quiz(
-    request: Request,
-    student_name: str = Form(...),
-    student_phone: str = Form(...),
-    student_email: str = Form(...),
-    student_province: str = Form(...),
-    student_school: str = Form(...),
-    student_cccd: str = Form(...)
-):
+async def start_quiz(request: Request):
     """
     Handle registration and show quiz.
     """
+    form_data = await request.form()
+    student_name = form_data.get("student_name", "")
+    student_phone = form_data.get("student_phone", "")
+    student_email = form_data.get("student_email", "")
+    student_province = form_data.get("student_province", "")
+    student_school = form_data.get("student_school", "")
+    student_cccd = form_data.get("student_cccd", "")
+
+    print(f"DEBUG: Start quiz for {student_name}, School: {student_school}")
+
     all_questions = await asyncio.to_thread(load_questions)
     # Randomly select 15 questions if available
     if len(all_questions) >= 15:
@@ -560,14 +562,14 @@ async def start_quiz(
     else:
         selected_questions = all_questions
     
-    # Pass student info to the quiz page
+    # Pass student info to the quiz page - Force string conversion
     student_info = {
-        "student_name": student_name,
-        "student_phone": student_phone,
-        "student_email": student_email,
-        "student_province": student_province,
-        "student_school": student_school,
-        "student_cccd": student_cccd
+        "student_name": str(student_name) if student_name else "",
+        "student_phone": str(student_phone) if student_phone else "",
+        "student_email": str(student_email) if student_email else "",
+        "student_province": str(student_province) if student_province else "",
+        "student_school": str(student_school) if student_school else "",
+        "student_cccd": str(student_cccd) if student_cccd else ""
     }
 
     return templates.TemplateResponse("index.html", {
@@ -580,6 +582,9 @@ async def start_quiz(
 @app.post("/submit", response_class=HTMLResponse)
 async def submit_quiz(request: Request):
     form_data = await request.form()
+    
+    student_name = form_data.get("student_name", "")
+    print(f"DEBUG: Submit received for '{student_name}'. Form keys: {list(form_data.keys())}")
     
     # Reconstruct the questions/answers mapping
     # Since we don't have the question text in the form keys (only IDs like q_1),
@@ -620,15 +625,17 @@ async def submit_quiz(request: Request):
 
     # Extract student info
     student_data = {
-        'student_name': form_data.get('student_name'),
-        'student_phone': form_data.get('student_phone'),
-        'student_email': form_data.get('student_email'),
-        'student_province': form_data.get('student_province'),
-        'student_school': form_data.get('student_school'),
-        'student_cccd': form_data.get('student_cccd'),
+        'student_name': str(form_data.get('student_name', '')),
+        'student_phone': str(form_data.get('student_phone', '')),
+        'student_email': str(form_data.get('student_email', '')),
+        'student_province': str(form_data.get('student_province', '')),
+        'student_school': str(form_data.get('student_school', '')),
+        'student_cccd': str(form_data.get('student_cccd', '')),
         'predicted_major': predicted_major,
         'career_advice': advice_markdown
     }
+    
+    print(f"DEBUG: Processing quiz for {student_data['student_name']} from {student_data['student_school']}")
     
     # Save to Google Sheet (run in background)
     asyncio.create_task(save_student_info(student_data))
