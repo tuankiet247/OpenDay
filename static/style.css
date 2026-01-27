@@ -9,9 +9,14 @@ body {
         radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 3px),
         radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 2px),
         radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 3px),
+        radial-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.1) 2px, transparent 3px),
+        radial-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.1) 1px, transparent 2px),
+        radial-gradient(white, rgba(255,255,255,.2) 1.5px, transparent 2.5px),
+        radial-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.1) 1px, transparent 1.5px),
+        radial-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.1) 2px, transparent 2.5px),
         linear-gradient(135deg, #321659 0%, #2714A6 30%, #883DF2 60%, #C250F2 85%, #2A95BF 100%);
-    background-size: 550px 550px, 350px 350px, 250px 250px, 100% 100%;
-    background-position: 0 0, 40px 60px, 130px 270px, 0 0;
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px, 400px 400px, 200px 200px, 300px 300px, 450px 450px, 100% 100%;
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 120px, 200px 30px, 10px 150px, 180px 200px, 250px 40px, 0 0;
     background-attachment: fixed;
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
@@ -607,3 +612,73 @@ button:hover::after, .btn:hover::after {
         font-size: 1rem;
     }
 }
+
+/* --- New Form Styles --- */
+
+.personal-info-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #e0e0e0;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.form-group input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.form-group input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.25);
+    border-color: #FF8C00;
+    box-shadow: 0 0 15px rgba(255, 140, 0, 0.3);
+}
+
+/* Add an icon or indicator for focus if desired, or simple hover effects */
+.form-group input:hover {
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Update button style in the form if needed specifically */
+.personal-info-box + button {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
