@@ -53,6 +53,282 @@ def get_google_sheet_client():
     return None
 
 
+
+# --- Constants ---
+
+TEAM_3_SCHOOLS = [
+    "TH, THCS và THPT iSchool Quy Nhơn",
+    "THPT Lý Tự Trọng",
+    "THPT Nguyễn Du",
+    "THPT Nguyễn Hồng Đạo",
+    "THPT Nguyễn Hữu Quang",
+    "THPT Nguyễn Thái Học",
+    "THPT Phan Bội Châu",
+    "THPT Số 1 Phù Mỹ",
+    "THPT Số 2 An Nhơn",
+    "THPT Số 2 Phù Mỹ",
+    "THPT Số 3 An Nhơn",
+    "THPT Số 3 Tuy Phước",
+    "THPT Trưng Vương",
+    "THPT Xuân Diệu",
+    "TT GDNN-GDTX An Nhơn",
+    "TT GDTX tinh Bình Định",
+    "Trường THPT Lương Thế Vinh",
+    "TH, THCS&THPT Quốc tế Việt Nam Singapore",
+    "THCS&THPT iSchool Nha Trang",
+    "THPT chuyên Lê Quý Đôn",
+    "THPT Đoàn Thị Điểm",
+    "THPT Hà Huy Tập",
+    "THPT Hermann Gmeiner",
+    "THPT Hoàng Hoa Thám",
+    "THPT Hoàng Văn Thụ",
+    "THPT Huỳnh Thúc Kháng",
+    "THPT Lê Hồng Phong",
+    "THPT Lê Thánh Tôn",
+    "THPT Ngô Gia Tự",
+    "THPT Nguyễn Chí Thanh",
+    "THPT Nguyễn Huệ",
+    "THCS&THPT Nguyễn Thái Bình",
+    "THPT Nguyễn Thiện Thuật",
+    "THPT Nguyễn Trãi",
+    "THPT Nguyễn Văn Trỗi",
+    "THPT Phạm Văn Đồng",
+    "THPT Tô Văn Ơn",
+    "THPT Trần Bình Trọng",
+    "THPT Trần Cao Vân",
+    "THPT Trần Hưng Đạo",
+    "THPT Trần Quý Cáp",
+    "Trường THPT Võ Nguyên Giáp",
+    "Trường THPT Ba Tơ",
+    "Trường THPT Bình Sơn",
+    "Trường THPT Phạm Kiệt"
+]
+
+TEAM_1_SCHOOLS = [
+    "THPT Hùng Vương",
+    "THPT Ngô Mây",
+    "THPT số 1 Quang Trung",
+    "THPT Số 1 An Nhơn",
+    "THPT Số 2 Tuy phước",
+    "THPT Số 3 Phù Cát",
+    "THPT Tăng Bạt Hổ",
+    "THPT Trần Cao Vân",
+    "THPT Trần Quang Diệu",
+    "THPT Vân Canh",
+    "THPT Vĩnh Thạnh",
+    "THPT Võ Giữ",
+    "THPT Mạc Đĩnh Chi",
+    "Trường Quốc tế Châu Á Thái Bình Dương",
+    "Trường THCS và THPT Phạm Hồng Thái",
+    "Trường THCS và THPT Y Đôn",
+    "THPT Chu Văn An",
+    "Trường THCS&THPT Kpă Klơng",
+    "Trường THCS, THPT Nguyễn Văn Cừ",
+    "Trường THPT A Sanh",
+    "THPT Lý Thường Kiệt",
+    "Trường THPT Hà Huy Tập",
+    "Trường THPT Huỳnh Thúc Kháng",
+    "Trường THPT Lê Hoàn",
+    "Trường THPT Lê Hồng Phong",
+    "Trường THPT Lê Lợi",
+    "Trường THPT Lê Quý Đôn",
+    "Nguyễn Khuyến",
+    "Trường THPT Lê Thánh Tông",
+    "Trường THPT Nguyễn Bỉnh Khiêm",
+    "Trường THPT Nguyễn Chí Thanh",
+    "Trường THPT Nguyễn Du",
+    "Trường THPT Nguyễn Huệ",
+    "Trường THPT Nguyễn Thái Học",
+    "Trường THPT Nguyễn Trãi",
+    "Trường THPT Nguyễn Trường Tộ",
+    "Trường THPT Phạm Văn Đồng",
+    "Trường THPT Phan Bội Châu",
+    "Trường THPT Pleiku",
+    "Trường THPT Quang Trung",
+    "Trường THPT Trần Hưng Đạo",
+    "Trường THPT Trần Phú",
+    "Trường THPT Trường Chinh",
+    "Trường THPT Võ Văn Kiệt",
+    "Trường PT Dân tộc Nội trú tinh"
+]
+
+TEAM_2_SCHOOLS = [
+    "PTDTNT THPT Bình Định",
+    "THPT An Lão",
+    "THPT Bùi Thị Xuân",
+    "THPT chuyên Chu Văn An",
+    "THPT chuyên Lê Quý Đôn",
+    "THPT FPT - Thành phố Quy Nhơn",
+    "THPT Hoài Ân",
+    "THPT Mỹ Thọ",
+    "THPT Nguyễn Bỉnh Khiêm",
+    "THPT Nguyễn Diêu",
+    "THPT Nguyễn Trân",
+    "THPT Số 1 Phù Cát",
+    "THPT Số 2 Phù Cát",
+    "THPT Võ Lai",
+    "THPT Binh Dương",
+    "Trường THPT Chi Lăng",
+    "Trường THPT Chuyên Hùng Vương",
+    "Trường THPT Hoàng Hoa Thám",
+    "Trường THPT Nguyễn Tất Thành",
+    "Trường THPT Trần Quốc Tuấn",
+    "Trần Cao Vân",
+    "TT GDTX tinh",
+    "Trường THPT Ya Ly",
+    "THPT Pleime",
+    "Phổ thông Duy Tân",
+    "THCS và THPT Nguyễn Khuyến",
+    "Nguyễn Bá Ngọc",
+    "THCS và THPT Nguyễn Viết Xuân",
+    "THCS và THPT Võ Nguyên Giáp",
+    "THPT Chuyên Lương Văn Chánh",
+    "THPT Lê Hồng Phong",
+    "THPT Lê Lợi",
+    "THPT Lê Thành Phương",
+    "THPT Lê Trung Kiên",
+    "THPT Nguyễn Trãi",
+    "THPT Ngô Gia Tự",
+    "THPT Nguyễn Du",
+    "Nguyễn Thị Minh Khai",
+    "THPT Nguyễn Công Trứ",
+    "THPT Nguyễn Huệ",
+    "THPT Nguyễn Văn Linh",
+    "THPT Phan Bội Châu",
+    "THPT Phan Chu Trinh",
+    "THPT Phan Đình Phùng",
+    "THPT Trần Bình Trọng",
+    "Võ Thị Sáu",
+    "Trần Quốc Tuấn",
+    "THPT Trần Phú",
+    "THPT Trần Suyền",
+    "THPT Tôn Đức Thắng",
+    "THPT Phạm Văn Đồng",
+    "THPT Nguyễn Thái Bình",
+    "THCS và THPT Chu Văn An",
+    "THPT Nguyễn Trường Tộ",
+    "THCS và THPT Vạn Tường",
+    "Đinh Tiên Hoàng",
+    "Trường THPT Lê Trung Đình",
+    "Trường THPT Số 1 Tư Nghĩa",
+    "Trung tâm GDNN-GDTX huyện Mộ Đức",
+    "Trung tâm GDTX tinh Quảng Ngãi"
+]
+
+TEAM_4_SCHOOLS = [
+    "PTDTNT THCS & THPT Vân Canh",
+    "Quốc Học Quy Nhơn",
+    "THPT An Lương",
+    "THPT Hòa Bình",
+    "THPT Ngô Lê Tân",
+    "THPT Nguyễn Đình Chiểu",
+    "THPT số 1 Nguyễn Huệ",
+    "THPT số 1 Nguyễn Trường Tộ",
+    "THPT Quy Nhơn",
+    "THPT Số 1 Tuy phước",
+    "THPT Tam Quan",
+    "THPT Tây Sơn",
+    "LIÊN CẤP THÀNH PHỐ GIÁO DỤC",
+    "THPT Ba Gia",
+    "THPT Chu Văn An",
+    "THPT chuyên Lê Khiết",
+    "THPT Lê Quý Đôn",
+    "THPT Lương Thế Vinh",
+    "THPT Lý Sơn",
+    "THPT Quang Trung",
+    "THPT Phạm Văn Đồng",
+    "THPT Số 1 Đức Phổ",
+    "THPT Số 1 Nghĩa Hành",
+    "THPT Số 2 Đức Phổ",
+    "THPT Số 2 Mộ Đức",
+    "THPT Số 2 Nghĩa Hành",
+    "THPT Sơn Mỹ",
+    "Sơn hà",
+    "Thu Xà",
+    "Trần Kỳ Phong",
+    "THPT Trần Quốc Tuấn"
+]
+
+
+BLANKS_SCHOOLS = [
+    "THPT Nguyễn Trung Trực",
+    "Trung tâm GDNN-GDTX Quy Nhơn",
+    "TT GDNN-GDTX Phù Cát",
+    "Trường THCS và THPT Phạm Kiệt",
+    "Trường THPT Dân tộc nội trú tỉnh Quảng Ngãi",
+    "Trường THPT Huỳnh Thúc Kháng",
+    "Trường THPT Nguyễn Công Phương",
+    "Trường THPT Số 2 Tư Nghĩa",
+    "Trường THPT Tây Trà",
+    "Trường THPT Trà Bồng",
+    "Trường THPT Trần Quang Diệu",
+    "Trường THPT Tư thục Hoàng Văn Thụ",
+    "Trường THPT Nguyễn Trãi",
+    "Trường THPT chuyên Lê Quí Đôn",
+    "Trường THPT An Phước",
+    "Trường THPT Chu Văn An",
+    "Trường THPT iSchool",
+    "Trường THPT Phan Chu Trinh",
+    "Trường THPT Ninh Hải",
+    "Trường THPT Tôn Đức Thắng",
+    "TTGDTX Ninh Thuận",
+    "THCS - THPT Đặng Chí Thanh",
+    "THPT Nguyễn Du",
+    "TH - THCS - THPT Hoa Sen",
+    "THPT Trường Chinh",
+    "THPT Tháp Chàm"
+]
+
+def check_school_team(school_name):
+    """
+    Check which team the school belongs to.
+    Returns: "team 1", "team 2", "team 3", "team 4", "blanks" or None
+    """
+    if not school_name:
+        return None
+    
+    school_name_lower = school_name.lower().strip()
+    
+    # Common prefixes to ignore for better matching
+    prefixes = ["trường ", "thpt ", "trường thpt ", "tt ", "trung tâm ", "thcs và thpt ", "thcs & thpt ", "ptdtnt ", "th, ", "th - "]
+    
+    # Normalize input school name
+    normalized_input = school_name_lower
+    for prefix in prefixes:
+        if normalized_input.startswith(prefix):
+            normalized_input = normalized_input[len(prefix):].strip()
+    
+    # Helper to check against a list
+    def check_list(school_list):
+        for school in school_list:
+            # Normalize list item
+            item_normalized = school.lower()
+            for prefix in prefixes:
+                if item_normalized.startswith(prefix):
+                    item_normalized = item_normalized[len(prefix):].strip()
+            
+            # Check containment
+            if normalized_input in item_normalized or item_normalized in normalized_input:
+                return True
+        return False
+
+    if check_list(BLANKS_SCHOOLS):
+        return "blanks"
+
+    if check_list(TEAM_1_SCHOOLS):
+        return "team 1"
+    
+    if check_list(TEAM_2_SCHOOLS):
+        return "team 2"
+        
+    if check_list(TEAM_3_SCHOOLS):
+        return "team 3"
+        
+    if check_list(TEAM_4_SCHOOLS):
+        return "team 4"
+        
+    return None
+
 async def init_sheet_headers():
     """Ensure Google Sheet has correct headers and formatting"""
     client = await asyncio.to_thread(get_google_sheet_client)
@@ -62,32 +338,50 @@ async def init_sheet_headers():
     try:
         spreadsheet_url = "https://docs.google.com/spreadsheets/d/1RTxOi5IYcYDL5VaCAiwK9B0T15K5ntSnWLJ4EwD_Rlg/edit?usp=sharing"
         sheet = await asyncio.to_thread(client.open_by_url, spreadsheet_url)
-        worksheet = await asyncio.to_thread(sheet.get_worksheet, 0)
         
         target_headers = ["Họ và tên", "Số điện thoại", "Email", "Tỉnh thành", "Trường THPT", "Kết quả AI đề xuất"]
         
+        # --- 1. Init Main Sheet (Sheet1) ---
+        worksheet = await asyncio.to_thread(sheet.get_worksheet, 0)
         current_headers = await asyncio.to_thread(worksheet.row_values, 1)
         
-        if current_headers == target_headers:
-            print("✅ Google Sheet already has correct headers.")
-        elif not current_headers:
-            print("⏳ Google Sheet is empty. Adding headers...")
+        if not current_headers:
+            print("⏳ Main Sheet is empty. Adding headers...")
             await asyncio.to_thread(worksheet.append_row, target_headers)
-            print("✅ Headers added.")
-        else:
-            print("⚠️ Google Sheet has different headers. Updating row 1...")
-            # Updating cells logic adapted for async context if needed, but append_row is safer for simple init
-            # For robustness, let's just update the first row cells using range
+        elif current_headers != target_headers:
+             # Just update headers to be sure
             cell_list = await asyncio.to_thread(worksheet.range, 'A1:F1')
             for i, cell in enumerate(cell_list):
                 if i < len(target_headers):
                     cell.value = target_headers[i]
             await asyncio.to_thread(worksheet.update_cells, cell_list)
-            print("✅ Headers updated.")
-
-        # Freeze the first row
+        
         await asyncio.to_thread(worksheet.freeze, rows=1)
-        print("✅ Header row frozen.")
+        print("✅ Main Sheet (Sheet1) initialized.")
+
+        # --- 2. Init Sub-Sheets (team 1, team 2, team 3, team 4, blanks) ---
+        for sheet_title in ["team 1", "team 2", "team 3", "team 4", "blanks"]:
+            try:
+                # Try to get the sheet
+                ws_sub = await asyncio.to_thread(sheet.worksheet, sheet_title)
+            except gspread.WorksheetNotFound:
+                # Create if not exists
+                print(f"⏳ Creating sheet '{sheet_title}'...")
+                ws_sub = await asyncio.to_thread(sheet.add_worksheet, title=sheet_title, rows=1000, cols=10)
+            
+            # Check/init headers
+            current_headers_sub = await asyncio.to_thread(ws_sub.row_values, 1)
+            if not current_headers_sub:
+                await asyncio.to_thread(ws_sub.append_row, target_headers)
+            elif current_headers_sub != target_headers:
+                cell_list = await asyncio.to_thread(ws_sub.range, 'A1:F1')
+                for i, cell in enumerate(cell_list):
+                    if i < len(target_headers):
+                        cell.value = target_headers[i]
+                await asyncio.to_thread(ws_sub.update_cells, cell_list)
+            
+            await asyncio.to_thread(ws_sub.freeze, rows=1)
+            print(f"✅ Sheet '{sheet_title}' initialized.")
 
     except Exception as e:
         print(f"⚠️ Error initializing Google Sheet: {e}")
@@ -114,10 +408,7 @@ async def save_student_info(student_data):
             print(f"⚠️ Spreadsheet not found. Please check permissions for the URL.")
             return
 
-        # Select the first worksheet
-        worksheet = await asyncio.to_thread(sheet.get_worksheet, 0)
-        
-        # Prepare row data: Name, Phone, Email, Province, School, AI Result
+        # Prepare row data
         row = [
             student_data.get('student_name', ''),
             student_data.get('student_phone', ''),
@@ -126,10 +417,23 @@ async def save_student_info(student_data):
             student_data.get('student_school', ''),
             student_data.get('predicted_major', '')
         ]
-        
-        # Append row
+
+        # 1. Save to Main Worksheet (index 0)
+        worksheet = await asyncio.to_thread(sheet.get_worksheet, 0)
         await asyncio.to_thread(worksheet.append_row, row)
-        print(f"✅ Saved data for {student_data.get('student_name')}")
+        print(f"✅ Saved data for {student_data.get('student_name')} to Main Sheet")
+        
+        # 2. Check which team the school belongs to (Team 1, 2, 3, 4 or blanks)
+        student_school = student_data.get('student_school', '')
+        team_name = check_school_team(student_school) # Returns "team 1", "team 2", "team 3", "team 4", "blanks" or None
+        
+        if team_name:
+            try:
+                ws_team = await asyncio.to_thread(sheet.worksheet, team_name)
+                await asyncio.to_thread(ws_team.append_row, row)
+                print(f"✅ Saved data for {student_data.get('student_name')} to '{team_name}' Sheet")
+            except gspread.WorksheetNotFound:
+                print(f"⚠️ Sheet '{team_name}' not found (should have been created setup).")
 
     except Exception as e:
         print(f"⚠️ Error saving to Google Sheet: {e}")
