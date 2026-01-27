@@ -1,10 +1,10 @@
-
 pandas
 openai
 python-dotenv
-
 fastapi
 uvicorn
 jinja2
 python-multipart
 markdown
+gspread
+google-auth
