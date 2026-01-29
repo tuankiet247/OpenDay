@@ -30,11 +30,262 @@
                 </div>
                 <div class="form-group">
                     <label for="student_province">Tỉnh thành:</label>
-                    <input type="text" id="student_province" name="student_province" required placeholder="Nhập tỉnh/thành phố">
+                    <select id="student_province" name="student_province" required>
+                        <option value="" disabled selected>Chọn tỉnh/thành phố</option>
+                        <option value="Bình Định">Bình Định</option>
+                        <option value="Gia Lai">Gia Lai</option>
+                        <option value="Khánh Hòa">Khánh Hòa</option>
+                        <option value="Phú Yên">Phú Yên</option>
+                        <option value="Quảng Ngãi">Quảng Ngãi</option>
+                        <option value="Ninh Thuận">Ninh Thuận</option>
+                    </select>
                 </div>
                 <div class="form-group">
                     <label for="student_school">Trường THPT:</label>
+                    <!-- Input text cho các tỉnh khác -->
                     <input type="text" id="student_school" name="student_school" required placeholder="Nhập tên trường THPT">
+                    
+                    <!-- Select dropdown cho Bình Định -->
+                    <select id="student_school_select" name="student_school" disabled style="display: none;">
+                        <option value="" disabled selected>Chọn trường THPT</option>
+                        <option value="PTDTNT THCS & THPT Vân Canh">PTDTNT THCS & THPT Vân Canh</option>
+                        <option value="PTDTNT THPT Bình Định">PTDTNT THPT Bình Định</option>
+                        <option value="Quốc Học Quy Nhơn">Quốc Học Quy Nhơn</option>
+                        <option value="TH, THCS và THPT iSchool Quy Nhơn">TH, THCS và THPT iSchool Quy Nhơn</option>
+                        <option value="THPT An Lão">THPT An Lão</option>
+                        <option value="THPT An Lương">THPT An Lương</option>
+                        <option value="THPT Bùi Thị Xuân">THPT Bùi Thị Xuân</option>
+                        <option value="THPT chuyên Chu Văn An">THPT chuyên Chu Văn An</option>
+                        <option value="THPT chuyên Lê Quý Đôn">THPT chuyên Lê Quý Đôn</option>
+                        <option value="THPT FPT - Thành phố Quy Nhơn">THPT FPT - Thành phố Quy Nhơn</option>
+                        <option value="THPT Hòa Bình">THPT Hòa Bình</option>
+                        <option value="THPT Hoài Ân">THPT Hoài Ân</option>
+                        <option value="THPT Hùng Vương">THPT Hùng Vương</option>
+                        <option value="THPT Lý Tự Trọng">THPT Lý Tự Trọng</option>
+                        <option value="THPT Mỹ Thọ">THPT Mỹ Thọ</option>
+                        <option value="THPT Ngô Lê Tân">THPT Ngô Lê Tân</option>
+                        <option value="THPT Ngô Mây">THPT Ngô Mây</option>
+                        <option value="THPT Nguyễn Bỉnh Khiêm">THPT Nguyễn Bỉnh Khiêm</option>
+                        <option value="THPT Nguyễn Diêu">THPT Nguyễn Diêu</option>
+                        <option value="THPT Nguyễn Đình Chiểu">THPT Nguyễn Đình Chiểu</option>
+                        <option value="THPT Nguyễn Du">THPT Nguyễn Du</option>
+                        <option value="THPT Nguyễn Hồng Đạo">THPT Nguyễn Hồng Đạo</option>
+                        <option value="THPT số 1 Nguyễn Huệ">THPT số 1 Nguyễn Huệ</option>
+                        <option value="THPT Nguyễn Hữu Quang">THPT Nguyễn Hữu Quang</option>
+                        <option value="THPT Nguyễn Thái Học">THPT Nguyễn Thái Học</option>
+                        <option value="THPT Nguyễn Trân">THPT Nguyễn Trân</option>
+                        <option value="THPT Nguyễn Trung Trực">THPT Nguyễn Trung Trực</option>
+                        <option value="THPT số 1 Nguyễn Trường Tộ">THPT số 1 Nguyễn Trường Tộ</option>
+                        <option value="THPT Phan Bội Châu">THPT Phan Bội Châu</option>
+                        <option value="THPT số 1 Quang Trung">THPT số 1 Quang Trung</option>
+                        <option value="THPT Quy Nhơn">THPT Quy Nhơn</option>
+                        <option value="THPT Số 1 An Nhơn">THPT Số 1 An Nhơn</option>
+                        <option value="THPT Số 1 Phù Cát">THPT Số 1 Phù Cát</option>
+                        <option value="THPT Số 1 Phù Mỹ">THPT Số 1 Phù Mỹ</option>
+                        <option value="THPT Số 1 Tuy phước">THPT Số 1 Tuy phước</option>
+                        <option value="THPT Số 2 An Nhơn">THPT Số 2 An Nhơn</option>
+                        <option value="THPT Số 2 Phù Cát">THPT Số 2 Phù Cát</option>
+                        <option value="THPT Số 2 Phù Mỹ">THPT Số 2 Phù Mỹ</option>
+                        <option value="THPT Số 2 Tuy phước">THPT Số 2 Tuy phước</option>
+                        <option value="THPT Số 3 An Nhơn">THPT Số 3 An Nhơn</option>
+                        <option value="THPT Số 3 Phù Cát">THPT Số 3 Phù Cát</option>
+                        <option value="THPT Số 3 Tuy Phước">THPT Số 3 Tuy Phước</option>
+                        <option value="THPT Tam Quan">THPT Tam Quan</option>
+                        <option value="THPT Tăng Bạt Hổ">THPT Tăng Bạt Hổ</option>
+                        <option value="THPT Tây Sơn">THPT Tây Sơn</option>
+                        <option value="THPT Trần Cao Vân">THPT Trần Cao Vân</option>
+                        <option value="THPT Trần Quang Diệu">THPT Trần Quang Diệu</option>
+                        <option value="THPT Trưng Vương">THPT Trưng Vương</option>
+                        <option value="THPT Vân Canh">THPT Vân Canh</option>
+                        <option value="THPT Vĩnh Thạnh">THPT Vĩnh Thạnh</option>
+                        <option value="THPT Võ Giữ">THPT Võ Giữ</option>
+                        <option value="THPT Võ Lai">THPT Võ Lai</option>
+                        <option value="THPT Xuân Diệu">THPT Xuân Diệu</option>
+                        <option value="TT GDNN-GDTX An Nhơn">TT GDNN-GDTX An Nhơn</option>
+                        <option value="TT GDTX tinh Bình Định">TT GDTX tinh Bình Định</option>
+                        <option value="Trung tâm GDNN-GDTX Quy Nhơn">Trung tâm GDNN-GDTX Quy Nhơn</option>
+                        <option value="THPT Bình Dương">THPT Bình Dương</option>
+                        <option value="TT GDNN-GDTX Phù Cát">TT GDNN-GDTX Phù Cát</option>
+                    </select>
+
+                    <!-- Select dropdown cho Gia Lai -->
+                    <select id="student_school_select_gialai" name="student_school" disabled style="display: none;">
+                        <option value="" disabled selected>Chọn trường THPT</option>
+                        <option value="THPT Mạc Đĩnh Chi">THPT Mạc Đĩnh Chi</option>
+                        <option value="Trường Quốc tế Châu Á Thái Bình Dương">Trường Quốc tế Châu Á Thái Bình Dương</option>
+                        <option value="Trường THCS và THPT Phạm Hồng Thái">Trường THCS và THPT Phạm Hồng Thái</option>
+                        <option value="Trường THCS và THPT Y Đôn">Trường THCS và THPT Y Đôn</option>
+                        <option value="THPT Chu Văn An">THPT Chu Văn An</option>
+                        <option value="Trường THCS&THPT Kpă Klơng">Trường THCS&THPT Kpă Klơng</option>
+                        <option value="Trường THCS, THPT Nguyễn Văn Cừ">Trường THCS, THPT Nguyễn Văn Cừ</option>
+                        <option value="Trường THPT A Sanh">Trường THPT A Sanh</option>
+                        <option value="THPT Lý Thường Kiệt">THPT Lý Thường Kiệt</option>
+                        <option value="Trường THPT Chi Lăng">Trường THPT Chi Lăng</option>
+                        <option value="Trường THPT Chuyên Hùng Vương">Trường THPT Chuyên Hùng Vương</option>
+                        <option value="Trường THPT Hà Huy Tập">Trường THPT Hà Huy Tập</option>
+                        <option value="Trường THPT Hoàng Hoa Thám">Trường THPT Hoàng Hoa Thám</option>
+                        <option value="Trường THPT Huỳnh Thúc Kháng">Trường THPT Huỳnh Thúc Kháng</option>
+                        <option value="Trường THPT Lê Hoàn">Trường THPT Lê Hoàn</option>
+                        <option value="Trường THPT Lê Hồng Phong">Trường THPT Lê Hồng Phong</option>
+                        <option value="Trường THPT Lê Lợi">Trường THPT Lê Lợi</option>
+                        <option value="Trường THPT Lê Quý Đôn">Trường THPT Lê Quý Đôn</option>
+                        <option value="Nguyễn Khuyến">Nguyễn Khuyến</option>
+                        <option value="Trường THPT Lê Thánh Tông">Trường THPT Lê Thánh Tông</option>
+                        <option value="Trường THPT Lương Thế Vinh">Trường THPT Lương Thế Vinh</option>
+                        <option value="Trường THPT Nguyễn Bỉnh Khiêm">Trường THPT Nguyễn Bỉnh Khiêm</option>
+                        <option value="Trường THPT Nguyễn Chí Thanh">Trường THPT Nguyễn Chí Thanh</option>
+                        <option value="Trường THPT Nguyễn Du">Trường THPT Nguyễn Du</option>
+                        <option value="Trường THPT Nguyễn Huệ">Trường THPT Nguyễn Huệ</option>
+                        <option value="Trường THPT Nguyễn Tất Thành">Trường THPT Nguyễn Tất Thành</option>
+                        <option value="Trường THPT Nguyễn Thái Học">Trường THPT Nguyễn Thái Học</option>
+                        <option value="Trường THPT Nguyễn Trãi">Trường THPT Nguyễn Trãi</option>
+                        <option value="Trường THPT Nguyễn Trường Tộ">Trường THPT Nguyễn Trường Tộ</option>
+                        <option value="Trường THPT Phạm Văn Đồng">Trường THPT Phạm Văn Đồng</option>
+                        <option value="Trường THPT Phan Bội Châu">Trường THPT Phan Bội Châu</option>
+                        <option value="Trường THPT Pleiku">Trường THPT Pleiku</option>
+                        <option value="Trường THPT Quang Trung">Trường THPT Quang Trung</option>
+                        <option value="Trường THPT Trần Hưng Đạo">Trường THPT Trần Hưng Đạo</option>
+                        <option value="Trường THPT Trần Phú">Trường THPT Trần Phú</option>
+                        <option value="Trường THPT Trần Quốc Tuấn">Trường THPT Trần Quốc Tuấn</option>
+                        <option value="Trường THPT Trường Chinh">Trường THPT Trường Chinh</option>
+                        <option value="Trường THPT Võ Văn Kiệt">Trường THPT Võ Văn Kiệt</option>
+                        <option value="Trần Cao Vân">Trần Cao Vân</option>
+                        <option value="Trường PT Dân tộc Nội trú tỉnh">Trường PT Dân tộc Nội trú tỉnh</option>
+                        <option value="TT GDTX tỉnh">TT GDTX tỉnh</option>
+                        <option value="Trường THPT Ya Ly">Trường THPT Ya Ly</option>
+                        <option value="THPT Pleime">THPT Pleime</option>
+                    </select>
+
+                    <!-- Select dropdown cho Khánh Hòa -->
+                    <select id="student_school_select_khanhhoa" name="student_school" disabled style="display: none;">
+                        <option value="" disabled selected>Chọn trường THPT</option>
+                        <option value="TH, THCS&THPT Quốc tế Việt Nam S">TH, THCS&THPT Quốc tế Việt Nam Singapore</option>
+                        <option value="THCS&THPT iSchool Nha Trang">THCS&THPT iSchool Nha Trang</option>
+                        <option value="THPT chuyên Lê Quý Đôn">THPT chuyên Lê Quý Đôn</option>
+                        <option value="THPT Đoàn Thị Điểm">THPT Đoàn Thị Điểm</option>
+                        <option value="THPT Hà Huy Tập (Hệ GDTX)">THPT Hà Huy Tập (Hệ GDTX)</option>
+                        <option value="THPT Hermann Gmeiner">THPT Hermann Gmeiner</option>
+                        <option value="THPT Hà Huy Tập">THPT Hà Huy Tập</option>
+                        <option value="THPT Hoàng Hoa Thám">THPT Hoàng Hoa Thám</option>
+                        <option value="THPT Hoàng Văn Thụ">THPT Hoàng Văn Thụ</option>
+                        <option value="THPT Huỳnh Thúc Kháng">THPT Huỳnh Thúc Kháng</option>
+                        <option value="THPT Lê Hồng Phong">THPT Lê Hồng Phong</option>
+                        <option value="THPT Lê Thánh Tôn">THPT Lê Thánh Tôn</option>
+                        <option value="THPT Lý Tự Trọng">THPT Lý Tự Trọng</option>
+                        <option value="THPT Ngô Gia Tự">THPT Ngô Gia Tự</option>
+                        <option value="THPT Nguyễn Chí Thanh">THPT Nguyễn Chí Thanh</option>
+                        <option value="THPT Nguyễn Huệ">THPT Nguyễn Huệ</option>
+                        <option value="THCS&THPT Nguyễn Thái Bình">THCS&THPT Nguyễn Thái Bình</option>
+                        <option value="THPT Nguyễn Thái Học">THPT Nguyễn Thái Học</option>
+                        <option value="THPT Nguyễn Thiện Thuật">THPT Nguyễn Thiện Thuật</option>
+                        <option value="THPT Nguyễn Trãi">THPT Nguyễn Trãi</option>
+                        <option value="THPT Nguyễn Văn Trỗi">THPT Nguyễn Văn Trỗi</option>
+                        <option value="THPT Phạm Văn Đồng">THPT Phạm Văn Đồng</option>
+                        <option value="THPT Phan Bội Châu">THPT Phan Bội Châu</option>
+                        <option value="THPT Tô Văn Ơn">THPT Tô Văn Ơn</option>
+                        <option value="THPT Trần Bình Trọng">THPT Trần Bình Trọng</option>
+                        <option value="THPT Trần Cao Vân">THPT Trần Cao Vân</option>
+                        <option value="THPT Trần Hưng Đạo">THPT Trần Hưng Đạo</option>
+                        <option value="THPT Trần Quý Cáp">THPT Trần Quý Cáp</option>
+                        <option value="Trường THPT Võ Nguyên Giáp">Trường THPT Võ Nguyên Giáp</option>
+                    </select>
+
+                    <!-- Select dropdown cho Phú Yên -->
+                    <select id="student_school_select_phuyen" name="student_school" disabled style="display: none;">
+                        <option value="" disabled selected>Chọn trường THPT</option>
+                        <option value="Phổ thông Duy Tân">Phổ thông Duy Tân</option>
+                        <option value="THCS và THPT Nguyễn Khuyến">THCS và THPT Nguyễn Khuyến</option>
+                        <option value="Nguyễn Bá Ngọc">Nguyễn Bá Ngọc</option>
+                        <option value="THCS và THPT Nguyễn Viết Xuân">THCS và THPT Nguyễn Viết Xuân</option>
+                        <option value="THCS và THPT Võ Nguyên Giáp">THCS và THPT Võ Nguyên Giáp</option>
+                        <option value="THPT Chuyên Lương Văn Chánh">THPT Chuyên Lương Văn Chánh</option>
+                        <option value="THPT Lê Hồng Phong">THPT Lê Hồng Phong</option>
+                        <option value="THPT Lê Lợi">THPT Lê Lợi</option>
+                        <option value="THPT Lê Thành Phương">THPT Lê Thành Phương</option>
+                        <option value="THPT Lê Trung Kiên">THPT Lê Trung Kiên</option>
+                        <option value="THPT Nguyễn Trãi">THPT Nguyễn Trãi</option>
+                        <option value="THPT Ngô Gia Tự">THPT Ngô Gia Tự</option>
+                        <option value="THPT Nguyễn Du">THPT Nguyễn Du</option>
+                        <option value="Nguyễn Thị Minh Khai">Nguyễn Thị Minh Khai</option>
+                        <option value="THPT Nguyễn Công Trứ">THPT Nguyễn Công Trứ</option>
+                        <option value="THPT Nguyễn Huệ">THPT Nguyễn Huệ</option>
+                        <option value="THPT Nguyễn Văn Linh">THPT Nguyễn Văn Linh</option>
+                        <option value="THPT Phan Bội Châu">THPT Phan Bội Châu</option>
+                        <option value="THPT Phan Chu Trinh">THPT Phan Chu Trinh</option>
+                        <option value="THPT Phan Đình Phùng">THPT Phan Đình Phùng</option>
+                        <option value="THPT Trần Bình Trọng">THPT Trần Bình Trọng</option>
+                        <option value="Võ Thị Sáu">Võ Thị Sáu</option>
+                        <option value="Trần Quốc Tuấn">Trần Quốc Tuấn</option>
+                        <option value="THPT Trần Phú">THPT Trần Phú</option>
+                        <option value="THPT Trần Suyền">THPT Trần Suyền</option>
+                        <option value="THPT Tôn Đức Thắng">THPT Tôn Đức Thắng</option>
+                        <option value="THPT Phạm Văn Đồng">THPT Phạm Văn Đồng</option>
+                        <option value="THPT Nguyễn Thái Bình">THPT Nguyễn Thái Bình</option>
+                        <option value="THCS và THPT Chu Văn An">THCS và THPT Chu Văn An</option>
+                        <option value="THPT Nguyễn Trường Tộ">THPT Nguyễn Trường Tộ</option>
+                    </select>
+
+                    <!-- Select dropdown cho Quảng Ngãi -->
+                    <select id="student_school_select_quangngai" name="student_school" disabled style="display: none;">
+                        <option value="" disabled selected>Chọn trường THPT</option>
+                        <option value="LIÊN CẤP THÀNH PHỐ GIÁO DỤC">LIÊN CẤP THÀNH PHỐ GIÁO DỤC</option>
+                        <option value="THCS và THPT Vạn Tường">THCS và THPT Vạn Tường</option>
+                        <option value="Trường THCS và THPT Phạm Kiệt">Trường THCS và THPT Phạm Kiệt</option>
+                        <option value="Trường THPT Ba Gia">Trường THPT Ba Gia</option>
+                        <option value="Trường THPT Ba Tơ">Trường THPT Ba Tơ</option>
+                        <option value="Trường THPT Bình Sơn">Trường THPT Bình Sơn</option>
+                        <option value="Trường THPT Chu Văn An">Trường THPT Chu Văn An</option>
+                        <option value="Trường THPT chuyên Lê Khiết">Trường THPT chuyên Lê Khiết</option>
+                        <option value="Đinh Tiên Hoàng">Đinh Tiên Hoàng</option>
+                        <option value="Trường THPT Dân tộc nội trú tỉnh Quảng Ngãi">Trường THPT Dân tộc nội trú tỉnh Quảng Ngãi</option>
+                        <option value="Trường THPT Huỳnh Thúc Kháng">Trường THPT Huỳnh Thúc Kháng</option>
+                        <option value="Trường THPT Lê Quý Đôn">Trường THPT Lê Quý Đôn</option>
+                        <option value="Trường THPT Lê Trung Đình">Trường THPT Lê Trung Đình</option>
+                        <option value="Trường THPT Lương Thế Vinh">Trường THPT Lương Thế Vinh</option>
+                        <option value="Trường THPT Lý Sơn">Trường THPT Lý Sơn</option>
+                        <option value="Trường THPT Nguyễn Công Phương">Trường THPT Nguyễn Công Phương</option>
+                        <option value="Trường THPT Phạm Kiệt">Trường THPT Phạm Kiệt</option>
+                        <option value="Trường THPT Quang Trung">Trường THPT Quang Trung</option>
+                        <option value="Trường THPT Phạm Văn Đồng">Trường THPT Phạm Văn Đồng</option>
+                        <option value="Trường THPT Số 1 Đức Phổ">Trường THPT Số 1 Đức Phổ</option>
+                        <option value="Trường THPT Số 1 Nghĩa Hành">Trường THPT Số 1 Nghĩa Hành</option>
+                        <option value="Trường THPT Số 1 Tư Nghĩa">Trường THPT Số 1 Tư Nghĩa</option>
+                        <option value="Trường THPT Số 2 Đức Phổ">Trường THPT Số 2 Đức Phổ</option>
+                        <option value="Trường THPT Số 2 Mộ Đức">Trường THPT Số 2 Mộ Đức</option>
+                        <option value="Trường THPT Số 2 Nghĩa Hành">Trường THPT Số 2 Nghĩa Hành</option>
+                        <option value="Trường THPT Số 2 Tư Nghĩa">Trường THPT Số 2 Tư Nghĩa</option>
+                        <option value="Trường THPT Sơn Mỹ">Trường THPT Sơn Mỹ</option>
+                        <option value="Trường THPT Tây Trà">Trường THPT Tây Trà</option>
+                        <option value="Trường THPT Trà Bồng">Trường THPT Trà Bồng</option>
+                        <option value="Trung tâm GDNN-GDTX huyện Mộ Đức">Trung tâm GDNN-GDTX huyện Mộ Đức</option>
+                        <option value="Trung tâm GDTX tỉnh Quảng Ngãi">Trung tâm GDTX tỉnh Quảng Ngãi</option>
+                        <option value="Sơn hà">Sơn hà</option>
+                        <option value="Thu Xà">Thu Xà</option>
+                        <option value="Trần Kỳ Phong">Trần Kỳ Phong</option>
+                        <option value="Trường THPT Trần Quang Diệu">Trường THPT Trần Quang Diệu</option>
+                        <option value="Trường THPT Trần Quốc Tuấn">Trường THPT Trần Quốc Tuấn</option>
+                        <option value="Trường THPT Tư thục Hoàng Văn Thụ">Trường THPT Tư thục Hoàng Văn Thụ</option>
+                        <option value="Trường THPT Võ Nguyên Giáp">Trường THPT Võ Nguyên Giáp</option>
+                    </select>
+
+                     <!-- Select dropdown cho Ninh Thuận -->
+                     <select id="student_school_select_ninhthuan" name="student_school" disabled style="display: none;">
+                        <option value="" disabled selected>Chọn trường THPT</option>
+                        <option value="Trường THPT Nguyễn Trãi">Trường THPT Nguyễn Trãi</option>
+                        <option value="Trường THPT chuyên Lê Quí Đôn">Trường THPT chuyên Lê Quí Đôn</option>
+                        <option value="Trường THPT An Phước">Trường THPT An Phước</option>
+                        <option value="Trường THPT Chu Văn An">Trường THPT Chu Văn An</option>
+                        <option value="Trường THPT iSchool">Trường THPT iSchool</option>
+                        <option value="Trường THPT Phan Chu Trinh">Trường THPT Phan Chu Trinh</option>
+                        <option value="Trường THPT Ninh Hải">Trường THPT Ninh Hải</option>
+                        <option value="Trường THPT Tôn Đức Thắng">Trường THPT Tôn Đức Thắng</option>
+                        <option value="TTGDTX Ninh Thuận">TTGDTX Ninh Thuận</option>
+                        <option value="THCS - THPT Đặng Chí Thanh">THCS - THPT Đặng Chí Thanh</option>
+                        <option value="THPT Nguyễn Du">THPT Nguyễn Du</option>
+                        <option value="TH - THCS - THPT Hoa Sen">TH - THCS - THPT Hoa Sen</option>
+                        <option value="THPT Trường Chinh">THPT Trường Chinh</option>
+                        <option value="THPT Tháp Chàm">THPT Tháp Chàm</option>
+                    </select>
                 </div>
                 <div class="form-group">
                     <label for="student_cccd">Số CCCD:</label>
@@ -42,8 +293,79 @@
                 </div>
             </div>
             
-            <button type="submit">Bắt đầu trắc nghiệm 🚀</button>
+            <div class="button-container">
+                <button type="submit" class="start-quiz-btn">
+                    <span class="button-icon">🚀</span>
+                    <span class="button-text">BẮT ĐẦU TRẮC NGHIỆM</span>
+                </button>
+            </div>
         </form>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const provinceSelect = document.getElementById('student_province');
+            const schoolInput = document.getElementById('student_school');
+            const schoolSelectBinhDinh = document.getElementById('student_school_select');
+            const schoolSelectGiaLai = document.getElementById('student_school_select_gialai');
+            const schoolSelectKhanhHoa = document.getElementById('student_school_select_khanhhoa');
+            const schoolSelectPhuYen = document.getElementById('student_school_select_phuyen');
+            const schoolSelectQuangNgai = document.getElementById('student_school_select_quangngai');
+            const schoolSelectNinhThuan = document.getElementById('student_school_select_ninhthuan');
+
+            function updateSchoolField() {
+                // Reset all first
+                schoolInput.style.display = 'none';
+                schoolInput.disabled = true;
+                
+                schoolSelectBinhDinh.style.display = 'none';
+                schoolSelectBinhDinh.disabled = true;
+                
+                schoolSelectGiaLai.style.display = 'none';
+                schoolSelectGiaLai.disabled = true;
+
+                schoolSelectKhanhHoa.style.display = 'none';
+                schoolSelectKhanhHoa.disabled = true;
+
+                schoolSelectPhuYen.style.display = 'none';
+                schoolSelectPhuYen.disabled = true;
+
+                schoolSelectQuangNgai.style.display = 'none';
+                schoolSelectQuangNgai.disabled = true;
+
+                schoolSelectNinhThuan.style.display = 'none';
+                schoolSelectNinhThuan.disabled = true;
+
+                if (provinceSelect.value === 'Bình Định') {
+                    schoolSelectBinhDinh.style.display = 'block';
+                    schoolSelectBinhDinh.disabled = false;
+                } else if (provinceSelect.value === 'Gia Lai') {
+                    schoolSelectGiaLai.style.display = 'block';
+                    schoolSelectGiaLai.disabled = false;
+                } else if (provinceSelect.value === 'Khánh Hòa') {
+                    schoolSelectKhanhHoa.style.display = 'block';
+                    schoolSelectKhanhHoa.disabled = false;
+                } else if (provinceSelect.value === 'Phú Yên') {
+                    schoolSelectPhuYen.style.display = 'block';
+                    schoolSelectPhuYen.disabled = false;
+                } else if (provinceSelect.value === 'Quảng Ngãi') {
+                    schoolSelectQuangNgai.style.display = 'block';
+                    schoolSelectQuangNgai.disabled = false;
+                } else if (provinceSelect.value === 'Ninh Thuận') {
+                    schoolSelectNinhThuan.style.display = 'block';
+                    schoolSelectNinhThuan.disabled = false;
+                } else {
+                    schoolInput.style.display = 'block';
+                    schoolInput.disabled = false;
+                }
+            }
+
+            // Listen for changes
+            provinceSelect.addEventListener('change', updateSchoolField);
+            
+            // Initial check
+            updateSchoolField();
+        });
+    </script>
 </body>
 </html>
