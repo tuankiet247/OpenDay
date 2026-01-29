@@ -499,7 +499,7 @@ async def generate_ai_advice(user_answers_text):
         for attempt in range(max_retries):
             try:
                 completion = await client.chat.completions.create(
-                    model="upstage/solar-pro-3:free", 
+                    model="nvidia/nemotron-3-nano-30b-a3b:free", 
                     messages=[
                         {
                             "role": "system",
