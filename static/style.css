@@ -77,14 +77,14 @@ body::after {
         background-position: 100% 100%;
         opacity: 1;
     }
-    position: relative;
-    z-index: 10;
 }
 
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    position: relative;
+    z-index: 10;
 }
 
 /* Tiêu đề chính */
@@ -121,8 +121,8 @@ form, .result-box {
     border-radius: 20px;
     padding: 35px;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(30px) saturate(220%) brightness(1.6) contrast(1.1);
     -webkit-backdrop-filter: blur(30px) saturate(220%) brightness(1.6) contrast(1.1);
+    backdrop-filter: blur(30px) saturate(220%) brightness(1.6) contrast(1.1);
     position: relative;
     overflow: hidden;
 }
@@ -196,8 +196,8 @@ form, .result-box {
     min-width: 0;
     position: relative;
     overflow: hidden;
-    backdrop-filter: blur(12px) brightness(1.1);
     -webkit-backdrop-filter: blur(12px) brightness(1.1);
+    backdrop-filter: blur(12px) brightness(1.1);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3),
                 0 2px 8px rgba(0, 0, 0, 0.2),
                 inset 0 1px 0 rgba(255, 255, 255, 0.15),
@@ -250,8 +250,8 @@ form, .result-box {
 }
 
 .option-label input[type="radio"] {
-    appearance: none;
     -webkit-appearance: none;
+    appearance: none;
     width: 20px;
     height: 20px;
     border: 2.5px solid rgba(255, 255, 255, 0.8);
@@ -405,8 +405,119 @@ button, .btn {
     font-weight: 900;
 }
 
-/* Buttons */
-button, .btn {
+/* Button Container */
+.button-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Start Quiz Button */
+.start-quiz-btn {
+    background: linear-gradient(135deg, #F36F21 0%, #FF8C42 50%, #F36F21 100%);
+    background-size: 200% auto;
+    color: white !important;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 18px 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    width: auto;
+    min-width: 350px;
+    max-width: 500px;
+    box-sizing: border-box;
+    box-shadow: 0 8px 25px rgba(243, 111, 33, 0.5),
+                0 15px 45px rgba(243, 111, 33, 0.3),
+                inset 0 2px 0 rgba(255, 255, 255, 0.3),
+                inset 0 -2px 0 rgba(0, 0, 0, 0.2);
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.1rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.start-quiz-btn .button-icon {
+    font-size: 1.5rem;
+    display: inline-block;
+    transition: transform 0.4s ease;
+}
+
+.start-quiz-btn .button-text {
+    font-weight: 900;
+    position: relative;
+    z-index: 2;
+}
+
+.start-quiz-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease, height 0.6s ease;
+}
+
+.start-quiz-btn:hover {
+    transform: translateY(-5px) scale(1.05);
+    background-position: right center;
+    border-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 12px 35px rgba(243, 111, 33, 0.7),
+                0 20px 60px rgba(243, 111, 33, 0.4),
+                0 0 60px rgba(255, 140, 50, 0.6),
+                inset 0 2px 0 rgba(255, 255, 255, 0.4),
+                inset 0 -2px 0 rgba(0, 0, 0, 0.3);
+    animation: buttonGlowPulse 1.5s ease-in-out infinite;
+}
+
+.start-quiz-btn:hover .button-icon {
+    transform: translateX(5px) rotate(15deg) scale(1.2);
+}
+
+.start-quiz-btn:hover::before {
+    width: 500px;
+    height: 500px;
+}
+
+.start-quiz-btn:active {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 6px 20px rgba(243, 111, 33, 0.6),
+                0 10px 35px rgba(243, 111, 33, 0.3);
+    transition: all 0.1s ease;
+}
+
+@keyframes buttonGlowPulse {
+    0%, 100% {
+        box-shadow: 0 12px 35px rgba(243, 111, 33, 0.7),
+                    0 20px 60px rgba(243, 111, 33, 0.4),
+                    0 0 60px rgba(255, 140, 50, 0.6),
+                    inset 0 2px 0 rgba(255, 255, 255, 0.4),
+                    inset 0 -2px 0 rgba(0, 0, 0, 0.3);
+    }
+    50% {
+        box-shadow: 0 12px 35px rgba(243, 111, 33, 0.9),
+                    0 20px 60px rgba(243, 111, 33, 0.6),
+                    0 0 80px rgba(255, 140, 50, 0.8),
+                    inset 0 2px 0 rgba(255, 255, 255, 0.5),
+                    inset 0 -2px 0 rgba(0, 0, 0, 0.4);
+    }
+}
+
+/* Fallback cho button và .btn cũ */
+button:not(.start-quiz-btn), .btn:not(.start-quiz-btn) {
     background: #F36F21;
     color: white !important;
     border: none;
@@ -611,14 +722,72 @@ button:hover::after, .btn:hover::after {
         padding: 15px; /* Nút bấm to hơn */
         font-size: 1rem;
     }
+
+    /* Mobile Responsive for Start Quiz Button */
+    .button-container {
+        margin-top: 20px;
+        padding: 0 10px;
+    }
+
+    .start-quiz-btn {
+        min-width: 100%;
+        max-width: 100%;
+        width: 100%;
+        padding: 16px 25px;
+        font-size: 0.95rem;
+        letter-spacing: 1.5px;
+        border-radius: 15px;
+        gap: 10px;
+    }
+
+    .start-quiz-btn .button-icon {
+        font-size: 1.3rem;
+    }
+
+    .start-quiz-btn .button-text {
+        font-size: 0.95rem;
+    }
+
+    /* Giảm hiệu ứng hover trên mobile để không ảnh hưởng touch */
+    .start-quiz-btn:hover {
+        transform: none;
+        animation: none;
+    }
+
+    .start-quiz-btn:active {
+        transform: scale(0.98);
+        box-shadow: 0 4px 15px rgba(243, 111, 33, 0.5),
+                    0 8px 25px rgba(243, 111, 33, 0.3);
+    }
+
+    /* Form mobile adjustments */
+    .personal-info-box {
+        padding: 20px 15px;
+        margin-bottom: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-group label {
+        font-size: 0.9rem;
+        margin-bottom: 6px;
+    }
+
+    .form-group input,
+    .form-group select {
+        padding: 10px 12px;
+        font-size: 0.95rem;
+    }
 }
 
 /* --- New Form Styles --- */
 
 .personal-info-box {
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     border-radius: 15px;
@@ -644,7 +813,8 @@ button:hover::after, .btn:hover::after {
     letter-spacing: 0.5px;
 }
 
-.form-group input {
+.form-group input,
+.form-group select {
     width: 100%;
     padding: 12px 15px;
     background: rgba(255, 255, 255, 0.15);
@@ -656,19 +826,37 @@ button:hover::after, .btn:hover::after {
     box-sizing: border-box; /* Ensure padding doesn't affect width */
 }
 
+.form-group select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-position: right 15px top 50%;
+    background-size: 12px auto;
+}
+
+.form-group select option {
+    background-color: #321659;
+    color: #ffffff;
+}
+
 .form-group input::placeholder {
     color: rgba(255, 255, 255, 0.5);
 }
 
-.form-group input:focus {
+.form-group input:focus,
+.form-group select:focus {
     outline: none;
-    background: rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.25);
     border-color: #FF8C00;
     box-shadow: 0 0 15px rgba(255, 140, 0, 0.3);
 }
 
 /* Add an icon or indicator for focus if desired, or simple hover effects */
-.form-group input:hover {
+.form-group input:hover,
+.form-group select:hover {
     border-color: rgba(255, 255, 255, 0.6);
 }
 
