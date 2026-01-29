@@ -339,7 +339,7 @@ async def init_sheet_headers():
         spreadsheet_url = "https://docs.google.com/spreadsheets/d/1RTxOi5IYcYDL5VaCAiwK9B0T15K5ntSnWLJ4EwD_Rlg/edit?usp=sharing"
         sheet = await asyncio.to_thread(client.open_by_url, spreadsheet_url)
         
-        target_headers = ["Họ và tên", "Số điện thoại", "Email", "Tỉnh thành", "Trường THPT", "Kết quả AI đề xuất"]
+        target_headers = ["Họ và tên", "Số điện thoại", "Email", "Tỉnh thành", "Trường THPT", "Kết quả AI đề xuất", "Ngành phụ 1", "Ngành phụ 2"]
         
         # --- 1. Init Main Sheet (Sheet1) ---
         worksheet = await asyncio.to_thread(sheet.get_worksheet, 0)
@@ -350,7 +350,7 @@ async def init_sheet_headers():
             await asyncio.to_thread(worksheet.append_row, target_headers)
         elif current_headers != target_headers:
              # Just update headers to be sure
-            cell_list = await asyncio.to_thread(worksheet.range, 'A1:F1')
+            cell_list = await asyncio.to_thread(worksheet.range, 'A1:H1')
             for i, cell in enumerate(cell_list):
                 if i < len(target_headers):
                     cell.value = target_headers[i]
@@ -374,7 +374,7 @@ async def init_sheet_headers():
             if not current_headers_sub:
                 await asyncio.to_thread(ws_sub.append_row, target_headers)
             elif current_headers_sub != target_headers:
-                cell_list = await asyncio.to_thread(ws_sub.range, 'A1:F1')
+                cell_list = await asyncio.to_thread(ws_sub.range, 'A1:H1')
                 for i, cell in enumerate(cell_list):
                     if i < len(target_headers):
                         cell.value = target_headers[i]
@@ -415,7 +415,9 @@ async def save_student_info(student_data):
             student_data.get('student_email', ''),
             student_data.get('student_province', ''),
             student_data.get('student_school', ''),
-            student_data.get('predicted_major', '')
+            student_data.get('predicted_major', ''),
+            student_data.get('sub_major_1', ''),
+            student_data.get('sub_major_2', '')
         ]
 
         # 1. Save to Main Worksheet (index 0)
@@ -622,6 +624,17 @@ async def submit_quiz(request: Request):
         predicted_major = match.group(1).strip()
         # Clean up any potential markdown formatting like bolding
         predicted_major = predicted_major.replace("*", "").strip()
+    
+    # Extract sub-majors (if any) - looking for additional major mentions
+    sub_major_1 = ""
+    sub_major_2 = ""
+    # Try to find sub-majors in the advice text (pattern may vary)
+    sub_major_matches = re.findall(r"(?:Ngành phụ|Lựa chọn thay thế|Alternative)[^:]*:\s*([^\n]+)", advice_markdown, re.IGNORECASE)
+    if sub_major_matches:
+        if len(sub_major_matches) >= 1:
+            sub_major_1 = sub_major_matches[0].strip().replace("*", "").strip()
+        if len(sub_major_matches) >= 2:
+            sub_major_2 = sub_major_matches[1].strip().replace("*", "").strip()
 
     # Extract student info
     student_data = {
@@ -632,6 +645,8 @@ async def submit_quiz(request: Request):
         'student_school': str(form_data.get('student_school', '')),
         'student_cccd': str(form_data.get('student_cccd', '')),
         'predicted_major': predicted_major,
+        'sub_major_1': sub_major_1,
+        'sub_major_2': sub_major_2,
         'career_advice': advice_markdown
     }
     
