@@ -616,6 +616,9 @@ async def submit_quiz(request: Request):
     # Generate advice
     advice_markdown = await generate_ai_advice(answers_text)
     
+    # Save full AI response for debugging
+    print(f"\n{'='*80}\nFULL AI RESPONSE:\n{'='*80}\n{advice_markdown}\n{'='*80}\n")
+    
     # Extract predicted major
     predicted_major = "Không xác định"
     # Regex to find "### 1. 🌌 KẾT QUẢ ĐỊNH VỊ: [Major Name]"
@@ -625,16 +628,107 @@ async def submit_quiz(request: Request):
         # Clean up any potential markdown formatting like bolding
         predicted_major = predicted_major.replace("*", "").strip()
     
-    # Extract sub-majors (if any) - looking for additional major mentions
+    # Extract sub-majors - search for Section 5 with specific emoji
     sub_major_1 = ""
     sub_major_2 = ""
-    # Try to find sub-majors in the advice text (pattern may vary)
-    sub_major_matches = re.findall(r"(?:Ngành phụ|Lựa chọn thay thế|Alternative)[^:]*:\s*([^\n]+)", advice_markdown, re.IGNORECASE)
-    if sub_major_matches:
-        if len(sub_major_matches) >= 1:
-            sub_major_1 = sub_major_matches[0].strip().replace("*", "").strip()
-        if len(sub_major_matches) >= 2:
-            sub_major_2 = sub_major_matches[1].strip().replace("*", "").strip()
+    
+    # Look for Section 5 with exact pattern including emoji 🎯
+    section5_patterns = [
+        r"###\s*5\.\s*🎯\s*GỢI Ý 2 NGÀNH HỌC PHỤ ĐỒNG HÀNH",  # Exact match
+        r"###\s*5\.\s*.*?(?:GỢI Ý|gợi ý).*?NGÀNH.*?PHỤ",  # Flexible match
+        r"###\s*5[\.:\s]",  # Just section 5 header
+    ]
+    
+    section5_text = ""
+    found_pattern = None
+    
+    for pattern in section5_patterns:
+        section5_match = re.search(pattern, advice_markdown, re.IGNORECASE | re.MULTILINE)
+        if section5_match:
+            found_pattern = pattern
+            # Extract text from this point to next ### or ---
+            section5_start = section5_match.start()
+            # Look for next section header or end marker
+            next_section = re.search(r"\n(?:###[^#]|\-\-\-)", advice_markdown[section5_start + 10:])
+            if next_section:
+                section5_text = advice_markdown[section5_start:section5_start + 10 + next_section.start()]
+            else:
+                # Take rest of document
+                section5_text = advice_markdown[section5_start:]
+            
+            print(f"\n{'='*60}\nFOUND SECTION 5 with pattern: {pattern[:50]}\n{'='*60}\n{section5_text}\n{'='*60}\n")
+            break
+    
+    # If still no section 5, check if AI even mentioned it
+    if not section5_text:
+        print("⚠️ WARNING: Section 5 not found in AI response!")
+        print("Checking if '🎯' or 'ngành phụ' or 'ngành học phụ' appears anywhere...")
+        if '🎯' in advice_markdown:
+            print("  ✓ Found 🎯 emoji")
+        if re.search(r'ngành.*?phụ', advice_markdown, re.IGNORECASE):
+            print("  ✓ Found 'ngành phụ' text")
+        else:
+            print("  ✗ 'ngành phụ' NOT found - AI may not have generated Section 5!")
+        
+        # Search entire document as fallback
+        section5_text = advice_markdown
+    
+    # Extract sub-major 1 with multiple patterns (support all AI format variations)
+    patterns_major_1 = [
+        # Format: #### 🔸 **#1 NAME**
+        r'####\s*🔸\s*\*\*#1\s+([^\*\n]+?)\*\*',
+        r'####.*?#1\s+\*?\*?([^\*\n]+?)(?:\*\*|\n)',
+        # Format: **#️⃣ Ngành phụ 1: NAME**
+        r'\*\*#️⃣\s*Ngành phụ\s*1:\s*([^\*\n]+?)\*\*',
+        r'#️⃣\s*Ngành phụ\s*1:\s*\*?\*?([^\*\n]+?)(?:\*\*|\n)',
+        # Template format: **🔸 Ngành học phụ #1: NAME**
+        r'\*\*🔸\s*Ngành học phụ #1:\s*([^\*\n]+?)\*\*',
+        r'🔸\s*Ngành học phụ #1:\s*\*\*([^\*\n]+?)\*\*',
+        # Generic patterns
+        r'#1[:\s]+\*?\*?([A-ZẮẰẲẴẶẤẦẨẪẬĐẾỀỂỄỆÍÌỈĨỊÓÒỎÕỌÔỐỒỔỖỘƠỚỜỞỠỢÚÙỦŨỤƯỨỪỬỮỰÝỲỶỸỴ\s]+?)(?:\*\*|\n)',
+        r'Ngành học phụ #1:\s*\*?\*?([^\*\n]+?)(?:\*\*|\n)',
+        r'ngành.*?phụ.*?#?1:\s*\*?\*?([^\*\n]+?)(?:\*\*|\n)',
+    ]
+    
+    for pattern in patterns_major_1:
+        match = re.search(pattern, section5_text, re.IGNORECASE)
+        if match:
+            sub_major_1 = match.group(1).strip()
+            sub_major_1 = re.sub(r'\s*[\(\[].*?[\)\]]', '', sub_major_1)  # Remove (text) or [text]
+            sub_major_1 = sub_major_1.strip()
+            print(f"✓ Found sub-major #1: '{sub_major_1}' (pattern: {pattern[:50]}...)")
+            break
+    
+    # Extract sub-major 2
+    patterns_major_2 = [
+        # Format: #### 🔸 **#2 NAME**
+        r'####\s*🔸\s*\*\*#2\s+([^\*\n]+?)\*\*',
+        r'####.*?#2\s+\*?\*?([^\*\n]+?)(?:\*\*|\n)',
+        # Format: **#️⃣ Ngành phụ 2: NAME**
+        r'\*\*#️⃣\s*Ngành phụ\s*2:\s*([^\*\n]+?)\*\*',
+        r'#️⃣\s*Ngành phụ\s*2:\s*\*?\*?([^\*\n]+?)(?:\*\*|\n)',
+        # Template format: **🔸 Ngành học phụ #2: NAME**
+        r'\*\*🔸\s*Ngành học phụ #2:\s*([^\*\n]+?)\*\*',
+        r'🔸\s*Ngành học phụ #2:\s*\*\*([^\*\n]+?)\*\*',
+        # Generic patterns
+        r'#2[:\s]+\*?\*?([A-ZẮẰẲẴẶẤẦẨẪẬĐẾỀỂỄỆÍÌỈĨỊÓÒỎÕỌÔỐỒỔỖỘƠỚỜỞỠỢÚÙỦŨỤƯỨỪỬỮỰÝỲỶỸỴ\s]+?)(?:\*\*|\n)',
+        r'Ngành học phụ #2:\s*\*?\*?([^\*\n]+?)(?:\*\*|\n)',
+        r'ngành.*?phụ.*?#?2:\s*\*?\*?([^\*\n]+?)(?:\*\*|\n)',
+    ]
+    
+    for pattern in patterns_major_2:
+        match = re.search(pattern, section5_text, re.IGNORECASE)
+        if match:
+            sub_major_2 = match.group(1).strip()
+            sub_major_2 = re.sub(r'\s*[\(\[].*?[\)\]]', '', sub_major_2)
+            sub_major_2 = sub_major_2.strip()
+            print(f"✓ Found sub-major #2: '{sub_major_2}' (pattern: {pattern[:40]}...)")
+            break
+    
+    print(f"\nDEBUG: Final extracted values:")
+    print(f"  - Main major: '{predicted_major}'")
+    print(f"  - Sub-major #1: '{sub_major_1}'")
+    print(f"  - Sub-major #2: '{sub_major_2}'\n")
 
     # Extract student info
     student_data = {
