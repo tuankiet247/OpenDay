@@ -594,7 +594,7 @@ async def submit_quiz(request: Request):
     # To do this efficiently, let's load all questions and create a map.
     
     all_questions = await asyncio.to_thread(load_questions)
-    question_map = {str(q['id']): q['text'] for q in all_questions}
+    question_map = {str(q['id']): q['content'] for q in all_questions}
     
     answers_text = ""
     for key, value in form_data.items():
