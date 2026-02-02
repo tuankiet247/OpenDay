@@ -22,16 +22,16 @@
         <input type="hidden" name="student_email" value="{{ student_info.student_email | default('') }}">
         <input type="hidden" name="student_province" value="{{ student_info.student_province | default('') }}">
         <input type="hidden" name="student_school" value="{{ student_info.student_school | default('') }}">
-       
+        <input type="hidden" name="student_cccd" value="{{ student_info.student_cccd | default('') }}">
             
             {% for q in questions %}
             <div class="question-box">
-                <div class="question-text">Câu {{ loop.index }}: {{ q.text }}</div>
+                <div class="question-text">Câu {{ loop.index }}: {{ q.content }}</div>
                 <div class="options-container">
                     {% for opt in q.options %}
                     <label class="option-label">
-                        <input type="radio" name="q_{{ q.id }}" value="{{ opt.label }}" required>
-                        <span>{{ opt.label }}</span>
+                        <input type="radio" name="q_{{ q.id }}" value="{{ opt.key }}" required>
+                        <span>{{ opt.key }}. {{ opt.text }}</span>
                     </label>
                     {% endfor %}
                 </div>
