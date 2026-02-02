@@ -1,1147 +1,155 @@
 {
+  "title": "Trắc nghiệm tính cách định hướng ngành học",
+  "total_questions": 15,
   "questions": [
     {
       "id": 1,
-      "text": "Sau một ngày dài, bạn thích ở nhà một mình để nạp lại năng lượng hơn là ra ngoài giao tiếp.",
+      "content": "Vào thời gian rảnh rỗi, bạn thường thích làm gì nhất?",
       "options": [
-        {
-          "value": 1,
-          "label": "Hoàn toàn không đúng"
-        },
-        {
-          "value": 2,
-          "label": "Không đúng"
-        },
-        {
-          "value": 3,
-          "label": "Bình thường"
-        },
-        {
-          "value": 4,
-          "label": "Đúng"
-        },
-        {
-          "value": 5,
-          "label": "Hoàn toàn đúng"
-        }
+        { "key": "A", "text": "Đọc sách, tìm hiểu kiến thức mới hoặc giải đố." },
+        { "key": "B", "text": "Vẽ tranh, nghe nhạc, viết lách hoặc làm đồ thủ công." },
+        { "key": "C", "text": "Gặp gỡ bạn bè, tham gia các hoạt động xã hội hoặc câu lạc bộ." },
+        { "key": "D", "text": "Sắp xếp lại phòng ốc, lên kế hoạch hoặc quản lý chi tiêu." }
       ]
     },
     {
       "id": 2,
-      "text": "Bạn thích làm việc độc lập hơn là làm việc nhóm.",
+      "content": "Trong một nhóm làm việc, bạn thường đảm nhận vai trò nào?",
       "options": [
-        {
-          "value": 1,
-          "label": "Hoàn toàn không đúng"
-        },
-        {
-          "value": 2,
-          "label": "Không đúng"
-        },
-        {
-          "value": 3,
-          "label": "Bình thường"
-        },
-        {
-          "value": 4,
-          "label": "Đúng"
-        },
-        {
-          "value": 5,
-          "label": "Hoàn toàn đúng"
-        }
+        { "key": "A", "text": "Người đưa ra ý tưởng và giải pháp kỹ thuật." },
+        { "key": "B", "text": "Người trình bày ý tưởng một cách sáng tạo và thu hút." },
+        { "key": "C", "text": "Người kết nối các thành viên và hòa giải mâu thuẫn." },
+        { "key": "D", "text": "Người lập kế hoạch, phân chia công việc và theo dõi tiến độ." }
       ]
     },
     {
       "id": 3,
-      "text": "Bạn thường giữ cảm xúc và suy nghĩ cho riêng mình.",
+      "content": "Bạn thích giải quyết vấn đề theo cách nào?",
       "options": [
-        {
-          "value": 1,
-          "label": "Hoàn toàn không đúng"
-        },
-        {
-          "value": 2,
-          "label": "Không đúng"
-        },
-        {
-          "value": 3,
-          "label": "Bình thường"
-        },
-        {
-          "value": 4,
-          "label": "Đúng"
-        },
-        {
-          "value": 5,
-          "label": "Hoàn toàn đúng"
-        }
+        { "key": "A", "text": "Phân tích logic, dựa trên dữ liệu và thực tế." },
+        { "key": "B", "text": "Dựa trên trực giác và tìm kiếm các giải pháp mới lạ, phá cách." },
+        { "key": "C", "text": "Thảo luận với người khác để tìm tiếng nói chung." },
+        { "key": "D", "text": "Tuân theo các quy trình và quy tắc đã được kiểm chứng." }
       ]
     },
     {
       "id": 4,
-      "text": "Bạn cảm thấy mệt mỏi sau khi giao tiếp xã hội trong thời gian dài.",
+      "content": "Môn học nào ở trường phổ thông khiến bạn hứng thú nhất?",
       "options": [
-        {
-          "value": 1,
-          "label": "Hoàn toàn không đúng"
-        },
-        {
-          "value": 2,
-          "label": "Không đúng"
-        },
-        {
-          "value": 3,
-          "label": "Bình thường"
-        },
-        {
-          "value": 4,
-          "label": "Đúng"
-        },
-        {
-          "value": 5,
-          "label": "Hoàn toàn đúng"
-        }
+        { "key": "A", "text": "Toán, Lý, Hóa hoặc Tin học." },
+        { "key": "B", "text": "Văn, Mỹ thuật, Âm nhạc." },
+        { "key": "C", "text": "Giáo dục công dân, Ngoại ngữ, Tâm lý." },
+        { "key": "D", "text": "Lịch sử, Địa lý hoặc các môn cần sự ghi nhớ, hệ thống." }
       ]
     },
     {
       "id": 5,
-      "text": "Bạn thích quan sát và suy ngẫm hơn là tham gia vào các cuộc trò chuyện.",
+      "content": "Môi trường làm việc lý tưởng của bạn trông như thế nào?",
       "options": [
-        {
-          "value": 1,
-          "label": "Hoàn toàn không đúng"
-        },
-        {
-          "value": 2,
-          "label": "Không đúng"
-        },
-        {
-          "value": 3,
-          "label": "Bình thường"
-        },
-        {
-          "value": 4,
-          "label": "Đúng"
-        },
-        {
-          "value": 5,
-          "label": "Hoàn toàn đúng"
-        }
+        { "key": "A", "text": "Phòng thí nghiệm hiện đại hoặc văn phòng yên tĩnh với máy tính." },
+        { "key": "B", "text": "Studio nghệ thuật tự do, không gian mở và đầy màu sắc." },
+        { "key": "C", "text": "Nơi đông người, nhộn nhịp, thường xuyên được giao tiếp." },
+        { "key": "D", "text": "Văn phòng chuyên nghiệp, ngăn nắp, có quy củ rõ ràng." }
       ]
     },
     {
       "id": 6,
-      "text": "Bạn thích những thứ rõ ràng, thực tế, và có thể đo lường được hơn là các ý tưởng trừu tượng.",
+      "content": "Khi gặp một thiết bị điện tử bị hỏng, bạn sẽ làm gì?",
       "options": [
-        {
-          "value": 1,
-          "label": "Hoàn toàn không đúng"
-        },
-        {
-          "value": 2,
-          "label": "Không đúng"
-        },
-        {
-          "value": 3,
-          "label": "Bình thường"
-        },
-        {
-          "value": 4,
-          "label": "Đúng"
-        },
-        {
-          "value": 5,
-          "label": "Hoàn toàn đúng"
-        }
+        { "key": "A", "text": "Tự mày mò tháo ra xem cấu tạo và tìm cách sửa." },
+        { "key": "B", "text": "Nghĩ xem có thể tái chế nó thành vật trang trí gì không." },
+        { "key": "C", "text": "Nhờ người quen giúp đỡ hoặc mang ra tiệm ngay." },
+        { "key": "D", "text": "Kiểm tra phiếu bảo hành và làm theo hướng dẫn của nhà sản xuất." }
       ]
     },
     {
       "id": 7,
-      "text": "Bạn chú ý đến chi tiết nhỏ và thực tế trong công việc.",
+      "content": "Bạn đánh giá cao giá trị nào nhất trong công việc?",
       "options": [
-        {
-          "value": 1,
-          "label": "Hoàn toàn không đúng"
-        },
-        {
-          "value": 2,
-          "label": "Không đúng"
-        },
-        {
-          "value": 3,
-          "label": "Bình thường"
-        },
-        {
-          "value": 4,
-          "label": "Đúng"
-        },
-        {
-          "value": 5,
-          "label": "Hoàn toàn đúng"
-        }
+        { "key": "A", "text": "Sự chính xác và trí tuệ." },
+        { "key": "B", "text": "Sự tự do và cái đẹp." },
+        { "key": "C", "text": "Lòng nhân ái và sự hỗ trợ cộng đồng." },
+        { "key": "D", "text": "Sự ổn định, quyền lực và địa vị." }
       ]
     },
     {
       "id": 8,
-      "text": "Bạn thích học qua ví dụ thực tế thay vì lý thuyết.",
+      "content": "Bạn có thích làm việc với các con số và bảng biểu không?",
       "options": [
-        {
-          "value": 1,
-          "label": "Hoàn toàn không đúng"
-        },
-        {
-          "value": 2,
-          "label": "Không đúng"
-        },
-        {
-          "value": 3,
-          "label": "Bình thường"
-        },
-        {
-          "value": 4,
-          "label": "Đúng"
-        },
-        {
-          "value": 5,
-          "label": "Hoàn toàn đúng"
-        }
+        { "key": "A", "text": "Rất thích, tôi thấy chúng thú vị và rõ ràng." },
+        { "key": "B", "text": "Không thích lắm, tôi thấy khô khan." },
+        { "key": "C", "text": "Bình thường, nếu cần thiết thì tôi vẫn làm được." },
+        { "key": "D", "text": "Khá thích, đặc biệt là khi chúng giúp tôi quản lý mọi thứ tốt hơn." }
       ]
     },
     {
       "id": 9,
-      "text": "Bạn tin vào các dữ kiện cụ thể hơn là suy đoán hoặc trực giác.",
+      "content": "Bạn cảm thấy thế nào khi phải thuyết trình trước đám đông?",
       "options": [
-        {
-          "value": 1,
-          "label": "Hoàn toàn không đúng"
-        },
-        {
-          "value": 2,
-          "label": "Không đúng"
-        },
-        {
-          "value": 3,
-          "label": "Bình thường"
-        },
-        {
-          "value": 4,
-          "label": "Đúng"
-        },
-        {
-          "value": 5,
-          "label": "Hoàn toàn đúng"
-        }
+        { "key": "A", "text": "Hơi lo lắng, tôi thích thể hiện qua văn bản hoặc sản phẩm hơn." },
+        { "key": "B", "text": "Thích thú, đây là cơ hội để tôi thể hiện cá tính." },
+        { "key": "C", "text": "Tự tin, tôi thích tương tác và truyền cảm hứng cho mọi người." },
+        { "key": "D", "text": "Tự tin nếu tôi đã chuẩn bị kỹ lưỡng nội dung và số liệu." }
       ]
     },
     {
       "id": 10,
-      "text": "Bạn thích các công việc có tính lặp lại và quy trình rõ ràng.",
+      "content": "Nếu được tham gia một dự án tình nguyện, bạn muốn làm gì?",
       "options": [
-        {
-          "value": 1,
-          "label": "Hoàn toàn không đúng"
-        },
-        {
-          "value": 2,
-          "label": "Không đúng"
-        },
-        {
-          "value": 3,
-          "label": "Bình thường"
-        },
-        {
-          "value": 4,
-          "label": "Đúng"
-        },
-        {
-          "value": 5,
-          "label": "Hoàn toàn đúng"
-        }
+        { "key": "A", "text": "Xây dựng hệ thống, sửa chữa cơ sở vật chất." },
+        { "key": "B", "text": "Thiết kế poster, chụp ảnh, quay phim truyền thông." },
+        { "key": "C", "text": "Trực tiếp dạy học, chăm sóc hoặc tư vấn cho mọi người." },
+        { "key": "D", "text": "Quản lý quỹ, hậu cần và sắp xếp nhân sự." }
       ]
     },
     {
       "id": 11,
-      "text": "Bạn đưa ra quyết định dựa trên lý trí hơn là cảm xúc.",
+      "content": "Bạn có thường xuyên quan tâm đến các vấn đề xã hội, tâm lý con người không?",
       "options": [
-        {
-          "value": 1,
-          "label": "Hoàn toàn không đúng"
-        },
-        {
-          "value": 2,
-          "label": "Không đúng"
-        },
-        {
-          "value": 3,
-          "label": "Bình thường"
-        },
-        {
-          "value": 4,
-          "label": "Đúng"
-        },
-        {
-          "value": 5,
-          "label": "Hoàn toàn đúng"
-        }
+        { "key": "A", "text": "Ít quan tâm, tôi quan tâm đến khoa học công nghệ hơn." },
+        { "key": "B", "text": "Quan tâm theo hướng cảm xúc và nghệ thuật phản ánh." },
+        { "key": "C", "text": "Rất quan tâm, tôi luôn muốn hiểu và giúp đỡ người khác." },
+        { "key": "D", "text": "Quan tâm ở khía cạnh luật pháp và trật tự xã hội." }
       ]
     },
     {
       "id": 12,
-      "text": "Bạn thích tranh luận để làm rõ vấn đề, dù có thể khiến người khác khó chịu.",
+      "content": "Bạn thích đọc loại sách báo hoặc tài liệu nào?",
       "options": [
-        {
-          "value": 1,
-          "label": "Hoàn toàn không đúng"
-        },
-        {
-          "value": 2,
-          "label": "Không đúng"
-        },
-        {
-          "value": 3,
-          "label": "Bình thường"
-        },
-        {
-          "value": 4,
-          "label": "Đúng"
-        },
-        {
-          "value": 5,
-          "label": "Hoàn toàn đúng"
-        }
+        { "key": "A", "text": "Tạp chí khoa học, công nghệ, khám phá." },
+        { "key": "B", "text": "Tiểu thuyết, truyện tranh, tạp chí thời trang/nghệ thuật." },
+        { "key": "C", "text": "Sách hạt giống tâm hồn, kỹ năng sống, tâm lý học." },
+        { "key": "D", "text": "Sách kinh doanh, đầu tư, tiểu sử doanh nhân." }
       ]
     },
     {
       "id": 13,
-      "text": "Bạn muốn sự công bằng và logic hơn là sự đồng cảm hay cảm xúc.",
+      "content": "Khi phải đưa ra một quyết định quan trọng, bạn thường làm gì?",
       "options": [
-        {
-          "value": 1,
-          "label": "Hoàn toàn không đúng"
-        },
-        {
-          "value": 2,
-          "label": "Không đúng"
-        },
-        {
-          "value": 3,
-          "label": "Bình thường"
-        },
-        {
-          "value": 4,
-          "label": "Đúng"
-        },
-        {
-          "value": 5,
-          "label": "Hoàn toàn đúng"
-        }
+        { "key": "A", "text": "Liệt kê điểm mạnh, điểm yếu và phân tích logic." },
+        { "key": "B", "text": "Nghe theo tiếng gọi của con tim và cảm hứng lúc đó." },
+        { "key": "C", "text": "Tham khảo ý kiến của những người tin cậy." },
+        { "key": "D", "text": "Cân nhắc rủi ro và chọn phương án an toàn, hiệu quả nhất." }
       ]
     },
     {
       "id": 14,
-      "text": "Bạn dễ bị khó chịu khi người khác suy nghĩ thiếu logic hoặc cảm tính quá mức.",
+      "content": "Bạn có thích công việc yêu cầu sự tỉ mỉ, chi tiết không?",
       "options": [
-        {
-          "value": 1,
-          "label": "Hoàn toàn không đúng"
-        },
-        {
-          "value": 2,
-          "label": "Không đúng"
-        },
-        {
-          "value": 3,
-          "label": "Bình thường"
-        },
-        {
-          "value": 4,
-          "label": "Đúng"
-        },
-        {
-          "value": 5,
-          "label": "Hoàn toàn đúng"
-        }
+        { "key": "A", "text": "Có, đặc biệt là các chi tiết kỹ thuật." },
+        { "key": "B", "text": "Không, tôi thích nhìn bức tranh tổng thể hơn." },
+        { "key": "C", "text": "Tùy thuộc vào việc đó có giúp ích cho ai không." },
+        { "key": "D", "text": "Rất thích, tôi không muốn bỏ sót bất kỳ lỗi nhỏ nào." }
       ]
     },
     {
       "id": 15,
-      "text": "Khi đưa ra lời khuyên, bạn tập trung giải pháp hơn là an ủi cảm xúc.",
+      "content": "Mục tiêu nghề nghiệp lớn nhất của bạn là gì?",
       "options": [
-        {
-          "value": 1,
-          "label": "Hoàn toàn không đúng"
-        },
-        {
-          "value": 2,
-          "label": "Không đúng"
-        },
-        {
-          "value": 3,
-          "label": "Bình thường"
-        },
-        {
-          "value": 4,
-          "label": "Đúng"
-        },
-        {
-          "value": 5,
-          "label": "Hoàn toàn đúng"
-        }
-      ]
-    },
-    {
-      "id": 16,
-      "text": "Bạn thích lên kế hoạch rõ ràng trước khi làm việc gì đó.",
-      "options": [
-        {
-          "value": 1,
-          "label": "Hoàn toàn không đúng"
-        },
-        {
-          "value": 2,
-          "label": "Không đúng"
-        },
-        {
-          "value": 3,
-          "label": "Bình thường"
-        },
-        {
-          "value": 4,
-          "label": "Đúng"
-        },
-        {
-          "value": 5,
-          "label": "Hoàn toàn đúng"
-        }
-      ]
-    },
-    {
-      "id": 17,
-      "text": "Bạn thích lịch trình cố định hơn là sự tự phát.",
-      "options": [
-        {
-          "value": 1,
-          "label": "Hoàn toàn không đúng"
-        },
-        {
-          "value": 2,
-          "label": "Không đúng"
-        },
-        {
-          "value": 3,
-          "label": "Bình thường"
-        },
-        {
-          "value": 4,
-          "label": "Đúng"
-        },
-        {
-          "value": 5,
-          "label": "Hoàn toàn đúng"
-        }
-      ]
-    },
-    {
-      "id": 18,
-      "text": "Bạn cảm thấy không thoải mái khi kế hoạch bị thay đổi.",
-      "options": [
-        {
-          "value": 1,
-          "label": "Hoàn toàn không đúng"
-        },
-        {
-          "value": 2,
-          "label": "Không đúng"
-        },
-        {
-          "value": 3,
-          "label": "Bình thường"
-        },
-        {
-          "value": 4,
-          "label": "Đúng"
-        },
-        {
-          "value": 5,
-          "label": "Hoàn toàn đúng"
-        }
-      ]
-    },
-    {
-      "id": 19,
-      "text": "Bạn thích hoàn thành công việc sớm thay vì để gần deadline.",
-      "options": [
-        {
-          "value": 1,
-          "label": "Hoàn toàn không đúng"
-        },
-        {
-          "value": 2,
-          "label": "Không đúng"
-        },
-        {
-          "value": 3,
-          "label": "Bình thường"
-        },
-        {
-          "value": 4,
-          "label": "Đúng"
-        },
-        {
-          "value": 5,
-          "label": "Hoàn toàn đúng"
-        }
-      ]
-    },
-    {
-      "id": 20,
-      "text": "Bạn luôn lên kế hoạch và ưu tiên công việc theo danh sách.",
-      "options": [
-        {
-          "value": 1,
-          "label": "Hoàn toàn không đúng"
-        },
-        {
-          "value": 2,
-          "label": "Không đúng"
-        },
-        {
-          "value": 3,
-          "label": "Bình thường"
-        },
-        {
-          "value": 4,
-          "label": "Đúng"
-        },
-        {
-          "value": 5,
-          "label": "Hoàn toàn đúng"
-        }
-      ]
-    },
-    {
-      "id": 21,
-      "text": "Bạn thích làm việc bằng tay, lắp ráp, sửa chữa, hoặc sử dụng dụng cụ.",
-      "options": [
-        {
-          "value": 1,
-          "label": "Hoàn toàn không đúng"
-        },
-        {
-          "value": 2,
-          "label": "Không đúng"
-        },
-        {
-          "value": 3,
-          "label": "Bình thường"
-        },
-        {
-          "value": 4,
-          "label": "Đúng"
-        },
-        {
-          "value": 5,
-          "label": "Hoàn toàn đúng"
-        }
-      ]
-    },
-    {
-      "id": 22,
-      "text": "Bạn thích công việc ngoài trời hơn là trong văn phòng.",
-      "options": [
-        {
-          "value": 1,
-          "label": "Hoàn toàn không đúng"
-        },
-        {
-          "value": 2,
-          "label": "Không đúng"
-        },
-        {
-          "value": 3,
-          "label": "Bình thường"
-        },
-        {
-          "value": 4,
-          "label": "Đúng"
-        },
-        {
-          "value": 5,
-          "label": "Hoàn toàn đúng"
-        }
-      ]
-    },
-    {
-      "id": 23,
-      "text": "Bạn thích vận động cơ thể và hoạt động thực tế hơn là làm việc với giấy tờ.",
-      "options": [
-        {
-          "value": 1,
-          "label": "Hoàn toàn không đúng"
-        },
-        {
-          "value": 2,
-          "label": "Không đúng"
-        },
-        {
-          "value": 3,
-          "label": "Bình thường"
-        },
-        {
-          "value": 4,
-          "label": "Đúng"
-        },
-        {
-          "value": 5,
-          "label": "Hoàn toàn đúng"
-        }
-      ]
-    },
-    {
-      "id": 24,
-      "text": "Bạn thích sử dụng máy móc hoặc thiết bị kỹ thuật.",
-      "options": [
-        {
-          "value": 1,
-          "label": "Hoàn toàn không đúng"
-        },
-        {
-          "value": 2,
-          "label": "Không đúng"
-        },
-        {
-          "value": 3,
-          "label": "Bình thường"
-        },
-        {
-          "value": 4,
-          "label": "Đúng"
-        },
-        {
-          "value": 5,
-          "label": "Hoàn toàn đúng"
-        }
-      ]
-    },
-    {
-      "id": 25,
-      "text": "Bạn thích phân tích số liệu, logic và giải quyết vấn đề phức tạp.",
-      "options": [
-        {
-          "value": 1,
-          "label": "Hoàn toàn không đúng"
-        },
-        {
-          "value": 2,
-          "label": "Không đúng"
-        },
-        {
-          "value": 3,
-          "label": "Bình thường"
-        },
-        {
-          "value": 4,
-          "label": "Đúng"
-        },
-        {
-          "value": 5,
-          "label": "Hoàn toàn đúng"
-        }
-      ]
-    },
-    {
-      "id": 26,
-      "text": "Bạn thích nghiên cứu, tìm hiểu, khám phá thông tin mới.",
-      "options": [
-        {
-          "value": 1,
-          "label": "Hoàn toàn không đúng"
-        },
-        {
-          "value": 2,
-          "label": "Không đúng"
-        },
-        {
-          "value": 3,
-          "label": "Bình thường"
-        },
-        {
-          "value": 4,
-          "label": "Đúng"
-        },
-        {
-          "value": 5,
-          "label": "Hoàn toàn đúng"
-        }
-      ]
-    },
-    {
-      "id": 27,
-      "text": "Bạn thích làm thí nghiệm, nghiên cứu hoặc giải bài toán khoa học.",
-      "options": [
-        {
-          "value": 1,
-          "label": "Hoàn toàn không đúng"
-        },
-        {
-          "value": 2,
-          "label": "Không đúng"
-        },
-        {
-          "value": 3,
-          "label": "Bình thường"
-        },
-        {
-          "value": 4,
-          "label": "Đúng"
-        },
-        {
-          "value": 5,
-          "label": "Hoàn toàn đúng"
-        }
-      ]
-    },
-    {
-      "id": 28,
-      "text": "Bạn tò mò về cách mọi thứ hoạt động và luôn muốn hiểu bản chất của vấn đề.",
-      "options": [
-        {
-          "value": 1,
-          "label": "Hoàn toàn không đúng"
-        },
-        {
-          "value": 2,
-          "label": "Không đúng"
-        },
-        {
-          "value": 3,
-          "label": "Bình thường"
-        },
-        {
-          "value": 4,
-          "label": "Đúng"
-        },
-        {
-          "value": 5,
-          "label": "Hoàn toàn đúng"
-        }
-      ]
-    },
-    {
-      "id": 29,
-      "text": "Bạn thích nghệ thuật, sáng tạo, vẽ, âm nhạc hoặc thiết kế.",
-      "options": [
-        {
-          "value": 1,
-          "label": "Hoàn toàn không đúng"
-        },
-        {
-          "value": 2,
-          "label": "Không đúng"
-        },
-        {
-          "value": 3,
-          "label": "Bình thường"
-        },
-        {
-          "value": 4,
-          "label": "Đúng"
-        },
-        {
-          "value": 5,
-          "label": "Hoàn toàn đúng"
-        }
-      ]
-    },
-    {
-      "id": 30,
-      "text": "Bạn thích sáng tạo và không thích các quy tắc quá cứng nhắc.",
-      "options": [
-        {
-          "value": 1,
-          "label": "Hoàn toàn không đúng"
-        },
-        {
-          "value": 2,
-          "label": "Không đúng"
-        },
-        {
-          "value": 3,
-          "label": "Bình thường"
-        },
-        {
-          "value": 4,
-          "label": "Đúng"
-        },
-        {
-          "value": 5,
-          "label": "Hoàn toàn đúng"
-        }
-      ]
-    },
-    {
-      "id": 31,
-      "text": "Bạn thích làm các dự án nghệ thuật, thiết kế hoặc trình diễn.",
-      "options": [
-        {
-          "value": 1,
-          "label": "Hoàn toàn không đúng"
-        },
-        {
-          "value": 2,
-          "label": "Không đúng"
-        },
-        {
-          "value": 3,
-          "label": "Bình thường"
-        },
-        {
-          "value": 4,
-          "label": "Đúng"
-        },
-        {
-          "value": 5,
-          "label": "Hoàn toàn đúng"
-        }
-      ]
-    },
-    {
-      "id": 32,
-      "text": "Bạn có thể nghĩ ra nhiều ý tưởng mới và độc đáo.",
-      "options": [
-        {
-          "value": 1,
-          "label": "Hoàn toàn không đúng"
-        },
-        {
-          "value": 2,
-          "label": "Không đúng"
-        },
-        {
-          "value": 3,
-          "label": "Bình thường"
-        },
-        {
-          "value": 4,
-          "label": "Đúng"
-        },
-        {
-          "value": 5,
-          "label": "Hoàn toàn đúng"
-        }
-      ]
-    },
-    {
-      "id": 33,
-      "text": "Bạn thích giúp đỡ người khác, lắng nghe và đồng cảm với họ.",
-      "options": [
-        {
-          "value": 1,
-          "label": "Hoàn toàn không đúng"
-        },
-        {
-          "value": 2,
-          "label": "Không đúng"
-        },
-        {
-          "value": 3,
-          "label": "Bình thường"
-        },
-        {
-          "value": 4,
-          "label": "Đúng"
-        },
-        {
-          "value": 5,
-          "label": "Hoàn toàn đúng"
-        }
-      ]
-    },
-    {
-      "id": 34,
-      "text": "Bạn thích tư vấn, chăm sóc hoặc hỗ trợ người khác phát triển.",
-      "options": [
-        {
-          "value": 1,
-          "label": "Hoàn toàn không đúng"
-        },
-        {
-          "value": 2,
-          "label": "Không đúng"
-        },
-        {
-          "value": 3,
-          "label": "Bình thường"
-        },
-        {
-          "value": 4,
-          "label": "Đúng"
-        },
-        {
-          "value": 5,
-          "label": "Hoàn toàn đúng"
-        }
-      ]
-    },
-    {
-      "id": 35,
-      "text": "Bạn kiên nhẫn và giỏi giao tiếp với mọi người.",
-      "options": [
-        {
-          "value": 1,
-          "label": "Hoàn toàn không đúng"
-        },
-        {
-          "value": 2,
-          "label": "Không đúng"
-        },
-        {
-          "value": 3,
-          "label": "Bình thường"
-        },
-        {
-          "value": 4,
-          "label": "Đúng"
-        },
-        {
-          "value": 5,
-          "label": "Hoàn toàn đúng"
-        }
-      ]
-    },
-    {
-      "id": 36,
-      "text": "Bạn muốn tạo tác động tích cực và giúp người khác hoàn thiện bản thân.",
-      "options": [
-        {
-          "value": 1,
-          "label": "Hoàn toàn không đúng"
-        },
-        {
-          "value": 2,
-          "label": "Không đúng"
-        },
-        {
-          "value": 3,
-          "label": "Bình thường"
-        },
-        {
-          "value": 4,
-          "label": "Đúng"
-        },
-        {
-          "value": 5,
-          "label": "Hoàn toàn đúng"
-        }
-      ]
-    },
-    {
-      "id": 37,
-      "text": "Bạn thích thuyết phục, đàm phán, dẫn dắt hoặc bán hàng.",
-      "options": [
-        {
-          "value": 1,
-          "label": "Hoàn toàn không đúng"
-        },
-        {
-          "value": 2,
-          "label": "Không đúng"
-        },
-        {
-          "value": 3,
-          "label": "Bình thường"
-        },
-        {
-          "value": 4,
-          "label": "Đúng"
-        },
-        {
-          "value": 5,
-          "label": "Hoàn toàn đúng"
-        }
-      ]
-    },
-    {
-      "id": 38,
-      "text": "Bạn thích làm việc chủ động, mạo hiểm, hoặc theo đuổi mục tiêu lớn.",
-      "options": [
-        {
-          "value": 1,
-          "label": "Hoàn toàn không đúng"
-        },
-        {
-          "value": 2,
-          "label": "Không đúng"
-        },
-        {
-          "value": 3,
-          "label": "Bình thường"
-        },
-        {
-          "value": 4,
-          "label": "Đúng"
-        },
-        {
-          "value": 5,
-          "label": "Hoàn toàn đúng"
-        }
-      ]
-    },
-    {
-      "id": 39,
-      "text": "Bạn thích lãnh đạo, quản lý hoặc điều phối người khác.",
-      "options": [
-        {
-          "value": 1,
-          "label": "Hoàn toàn không đúng"
-        },
-        {
-          "value": 2,
-          "label": "Không đúng"
-        },
-        {
-          "value": 3,
-          "label": "Bình thường"
-        },
-        {
-          "value": 4,
-          "label": "Đúng"
-        },
-        {
-          "value": 5,
-          "label": "Hoàn toàn đúng"
-        }
-      ]
-    },
-    {
-      "id": 40,
-      "text": "Bạn thích môi trường cạnh tranh, kinh doanh hoặc khởi nghiệp.",
-      "options": [
-        {
-          "value": 1,
-          "label": "Hoàn toàn không đúng"
-        },
-        {
-          "value": 2,
-          "label": "Không đúng"
-        },
-        {
-          "value": 3,
-          "label": "Bình thường"
-        },
-        {
-          "value": 4,
-          "label": "Đúng"
-        },
-        {
-          "value": 5,
-          "label": "Hoàn toàn đúng"
-        }
-      ]
-    },
-    {
-      "id": 41,
-      "text": "Bạn thích công việc có quy trình rõ ràng, theo quy tắc và ổn định.",
-      "options": [
-        {
-          "value": 1,
-          "label": "Hoàn toàn không đúng"
-        },
-        {
-          "value": 2,
-          "label": "Không đúng"
-        },
-        {
-          "value": 3,
-          "label": "Bình thường"
-        },
-        {
-          "value": 4,
-          "label": "Đúng"
-        },
-        {
-          "value": 5,
-          "label": "Hoàn toàn đúng"
-        }
-      ]
-    },
-    {
-      "id": 42,
-      "text": "Bạn thích nhập liệu, thống kê, lưu trữ, sắp xếp hoặc quản lý giấy tờ.",
-      "options": [
-        {
-          "value": 1,
-          "label": "Hoàn toàn không đúng"
-        },
-        {
-          "value": 2,
-          "label": "Không đúng"
-        },
-        {
-          "value": 3,
-          "label": "Bình thường"
-        },
-        {
-          "value": 4,
-          "label": "Đúng"
-        },
-        {
-          "value": 5,
-          "label": "Hoàn toàn đúng"
-        }
-      ]
-    },
-    {
-      "id": 43,
-      "text": "Bạn thích làm việc chính xác, cẩn thận và theo chuẩn mực.",
-      "options": [
-        {
-          "value": 1,
-          "label": "Hoàn toàn không đúng"
-        },
-        {
-          "value": 2,
-          "label": "Không đúng"
-        },
-        {
-          "value": 3,
-          "label": "Bình thường"
-        },
-        {
-          "value": 4,
-          "label": "Đúng"
-        },
-        {
-          "value": 5,
-          "label": "Hoàn toàn đúng"
-        }
-      ]
-    },
-    {
-      "id": 44,
-      "text": "Bạn cảm thấy thoải mái nhất khi công việc có hướng dẫn, quy trình và cấu trúc rõ ràng.",
-      "options": [
-        {
-          "value": 1,
-          "label": "Hoàn toàn không đúng"
-        },
-        {
-          "value": 2,
-          "label": "Không đúng"
-        },
-        {
-          "value": 3,
-          "label": "Bình thường"
-        },
-        {
-          "value": 4,
-          "label": "Đúng"
-        },
-        {
-          "value": 5,
-          "label": "Hoàn toàn đúng"
-        }
+        { "key": "A", "text": "Trở thành chuyên gia hàng đầu trong lĩnh vực kỹ thuật/nghiên cứu." },
+        { "key": "B", "text": "Tạo ra những tác phẩm để đời hoặc phong cách riêng biệt." },
+        { "key": "C", "text": "Mang lại giá trị tốt đẹp cho cộng đồng và giúp đỡ nhiều người." },
+        { "key": "D", "text": "Trở thành nhà lãnh đạo, quản lý giỏi hoặc doanh nhân thành đạt." }
       ]
     }
   ]
