@@ -79,7 +79,6 @@ Ngoài ngành chính, hệ thống cũng phát hiện tín hiệu từ 2 ngành 
 * **🔸 Ngành học phụ #2: [TÊN NGÀNH HỌC PHỤ 2]**
     *Lý do khớp:* [Giải thích ngắn gọn tại sao ngành này phù hợp, liên kết với kỹ năng/sở thích của học sinh và có thể bổ trợ cho ngành chính]
 
-*💡 Power Tip:* Học song hành ngành chính với 1 trong 2 ngành phụ này có thể mở ra cơ hội nghề nghiệp đa chiều và tăng sức cạnh tranh vượt trội trên thị trường lao động!
 
 ---
 **SYSTEM MESSAGE:**
