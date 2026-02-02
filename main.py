@@ -499,7 +499,7 @@ async def generate_ai_advice(user_answers_text):
         for attempt in range(max_retries):
             try:
                 completion = await client.chat.completions.create(
-                    model="arcee-ai/trinity-large-preview:free", 
+                    model="tngtech/deepseek-r1t2-chimera:free", 
                     messages=[
                         {
                             "role": "system",
