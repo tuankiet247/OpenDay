@@ -1,155 +1,456 @@
 {
-  "title": "Trắc nghiệm tính cách định hướng ngành học",
-  "total_questions": 15,
+  "title": "Trắc nghiệm Định hướng Nghề nghiệp (45 câu - 4 lựa chọn)",
+  "description": "Bộ câu hỏi trắc nghiệm RIASEC giúp xác định nhóm tính cách nghề nghiệp với độ phân giải cao hơn.",
+  "total_questions": 45,
   "questions": [
     {
       "id": 1,
-      "content": "Vào thời gian rảnh rỗi, bạn thường thích làm gì nhất?",
+      "content": "Bạn có hứng thú với việc tháo lắp, sửa chữa các thiết bị điện tử hoặc đồ gia dụng hỏng hóc trong nhà không?",
       "options": [
-        { "key": "A", "text": "Đọc sách, tìm hiểu kiến thức mới hoặc giải đố." },
-        { "key": "B", "text": "Vẽ tranh, nghe nhạc, viết lách hoặc làm đồ thủ công." },
-        { "key": "C", "text": "Gặp gỡ bạn bè, tham gia các hoạt động xã hội hoặc câu lạc bộ." },
-        { "key": "D", "text": "Sắp xếp lại phòng ốc, lên kế hoạch hoặc quản lý chi tiêu." }
+        { "key": "A", "text": "Rất thích, tôi thường xuyên mày mò tự làm." },
+        { "key": "B", "text": "Khá thích, tôi có thể làm những việc đơn giản." },
+        { "key": "C", "text": "Bình thường, chỉ làm khi thực sự cần thiết." },
+        { "key": "D", "text": "Không thích chút nào, tôi thường gọi thợ." }
       ]
     },
     {
       "id": 2,
-      "content": "Trong một nhóm làm việc, bạn thường đảm nhận vai trò nào?",
+      "content": "Bạn có thường xuyên tìm đọc các tài liệu khoa học để hiểu nguyên nhân tại sao các hiện tượng tự nhiên xảy ra không?",
       "options": [
-        { "key": "A", "text": "Người đưa ra ý tưởng và giải pháp kỹ thuật." },
-        { "key": "B", "text": "Người trình bày ý tưởng một cách sáng tạo và thu hút." },
-        { "key": "C", "text": "Người kết nối các thành viên và hòa giải mâu thuẫn." },
-        { "key": "D", "text": "Người lập kế hoạch, phân chia công việc và theo dõi tiến độ." }
+        { "key": "A", "text": "Rất thường xuyên, đó là sở thích của tôi." },
+        { "key": "B", "text": "Thỉnh thoảng, khi gặp vấn đề thú vị." },
+        { "key": "C", "text": "Hiếm khi, tôi chỉ đọc nếu bắt buộc." },
+        { "key": "D", "text": "Không bao giờ, tôi thấy nó khô khan." }
       ]
     },
     {
       "id": 3,
-      "content": "Bạn thích giải quyết vấn đề theo cách nào?",
+      "content": "Bạn có thích dành thời gian rảnh để sáng tạo nghệ thuật (vẽ, viết lách, chơi nhạc, chụp ảnh) không?",
       "options": [
-        { "key": "A", "text": "Phân tích logic, dựa trên dữ liệu và thực tế." },
-        { "key": "B", "text": "Dựa trên trực giác và tìm kiếm các giải pháp mới lạ, phá cách." },
-        { "key": "C", "text": "Thảo luận với người khác để tìm tiếng nói chung." },
-        { "key": "D", "text": "Tuân theo các quy trình và quy tắc đã được kiểm chứng." }
+        { "key": "A", "text": "Rất thích, tôi làm điều đó mỗi ngày." },
+        { "key": "B", "text": "Khá thích, tôi làm khi có cảm hứng." },
+        { "key": "C", "text": "Bình thường, chỉ xem/nghe chứ ít khi tự làm." },
+        { "key": "D", "text": "Không thích, tôi không có năng khiếu." }
       ]
     },
     {
       "id": 4,
-      "content": "Môn học nào ở trường phổ thông khiến bạn hứng thú nhất?",
+      "content": "Bạn có sẵn lòng dành hàng giờ để lắng nghe tâm sự và giúp bạn bè giải quyết rắc rối cá nhân không?",
       "options": [
-        { "key": "A", "text": "Toán, Lý, Hóa hoặc Tin học." },
-        { "key": "B", "text": "Văn, Mỹ thuật, Âm nhạc." },
-        { "key": "C", "text": "Giáo dục công dân, Ngoại ngữ, Tâm lý." },
-        { "key": "D", "text": "Lịch sử, Địa lý hoặc các môn cần sự ghi nhớ, hệ thống." }
+        { "key": "A", "text": "Chắc chắn rồi, tôi luôn sẵn sàng." },
+        { "key": "B", "text": "Có, nếu đó là bạn bè thân thiết." },
+        { "key": "C", "text": "Tùy lúc, đôi khi tôi thấy hơi phiền." },
+        { "key": "D", "text": "Không, tôi không giỏi an ủi người khác." }
       ]
     },
     {
       "id": 5,
-      "content": "Môi trường làm việc lý tưởng của bạn trông như thế nào?",
+      "content": "Bạn có cảm thấy phấn khích khi được đứng trước đám đông để thuyết trình hoặc vận động mọi người không?",
       "options": [
-        { "key": "A", "text": "Phòng thí nghiệm hiện đại hoặc văn phòng yên tĩnh với máy tính." },
-        { "key": "B", "text": "Studio nghệ thuật tự do, không gian mở và đầy màu sắc." },
-        { "key": "C", "text": "Nơi đông người, nhộn nhịp, thường xuyên được giao tiếp." },
-        { "key": "D", "text": "Văn phòng chuyên nghiệp, ngăn nắp, có quy củ rõ ràng." }
+        { "key": "A", "text": "Rất phấn khích, tôi muốn làm tâm điểm." },
+        { "key": "B", "text": "Khá tự tin, tôi làm tốt vai trò đó." },
+        { "key": "C", "text": "Hơi hồi hộp, nhưng vẫn cố gắng làm được." },
+        { "key": "D", "text": "Rất sợ, tôi luôn tìm cách né tránh." }
       ]
     },
     {
       "id": 6,
-      "content": "Khi gặp một thiết bị điện tử bị hỏng, bạn sẽ làm gì?",
+      "content": "Bạn có cảm thấy khó chịu khi mọi thứ trong phòng hoặc trên bàn làm việc bị lộn xộn, không theo trật tự không?",
       "options": [
-        { "key": "A", "text": "Tự mày mò tháo ra xem cấu tạo và tìm cách sửa." },
-        { "key": "B", "text": "Nghĩ xem có thể tái chế nó thành vật trang trí gì không." },
-        { "key": "C", "text": "Nhờ người quen giúp đỡ hoặc mang ra tiệm ngay." },
-        { "key": "D", "text": "Kiểm tra phiếu bảo hành và làm theo hướng dẫn của nhà sản xuất." }
+        { "key": "A", "text": "Rất khó chịu, tôi phải dọn ngay lập tức." },
+        { "key": "B", "text": "Khá khó chịu, tôi sẽ dọn khi rảnh." },
+        { "key": "C", "text": "Bình thường, lộn xộn chút cũng không sao." },
+        { "key": "D", "text": "Không hề, tôi quen sống bừa bộn rồi." }
       ]
     },
     {
       "id": 7,
-      "content": "Bạn đánh giá cao giá trị nào nhất trong công việc?",
+      "content": "Bạn có thích các công việc yêu cầu vận động chân tay và sử dụng sức khỏe (như làm vườn, xây dựng, thể thao) không?",
       "options": [
-        { "key": "A", "text": "Sự chính xác và trí tuệ." },
-        { "key": "B", "text": "Sự tự do và cái đẹp." },
-        { "key": "C", "text": "Lòng nhân ái và sự hỗ trợ cộng đồng." },
-        { "key": "D", "text": "Sự ổn định, quyền lực và địa vị." }
+        { "key": "A", "text": "Rất thích, tôi thấy khỏe khoắn." },
+        { "key": "B", "text": "Khá thích, miễn là không quá nặng nhọc." },
+        { "key": "C", "text": "Bình thường, làm cũng được không làm cũng được." },
+        { "key": "D", "text": "Không thích, tôi thích ngồi một chỗ hơn." }
       ]
     },
     {
       "id": 8,
-      "content": "Bạn có thích làm việc với các con số và bảng biểu không?",
+      "content": "Bạn có hứng thú với việc giải các bài toán đố, chơi cờ hoặc các trò chơi đòi hỏi tư duy logic phức tạp không?",
       "options": [
-        { "key": "A", "text": "Rất thích, tôi thấy chúng thú vị và rõ ràng." },
-        { "key": "B", "text": "Không thích lắm, tôi thấy khô khan." },
-        { "key": "C", "text": "Bình thường, nếu cần thiết thì tôi vẫn làm được." },
-        { "key": "D", "text": "Khá thích, đặc biệt là khi chúng giúp tôi quản lý mọi thứ tốt hơn." }
+        { "key": "A", "text": "Rất hứng thú, tôi có thể chơi cả ngày." },
+        { "key": "B", "text": "Khá hứng thú, thỉnh thoảng tôi có chơi." },
+        { "key": "C", "text": "Chỉ chơi cho vui, không suy nghĩ quá nhiều." },
+        { "key": "D", "text": "Không hứng thú, tôi thấy đau đầu." }
       ]
     },
     {
       "id": 9,
-      "content": "Bạn cảm thấy thế nào khi phải thuyết trình trước đám đông?",
+      "content": "Bạn có thích thay đổi phong cách ăn mặc hoặc cách trang trí phòng ốc thường xuyên để không bị nhàm chán không?",
       "options": [
-        { "key": "A", "text": "Hơi lo lắng, tôi thích thể hiện qua văn bản hoặc sản phẩm hơn." },
-        { "key": "B", "text": "Thích thú, đây là cơ hội để tôi thể hiện cá tính." },
-        { "key": "C", "text": "Tự tin, tôi thích tương tác và truyền cảm hứng cho mọi người." },
-        { "key": "D", "text": "Tự tin nếu tôi đã chuẩn bị kỹ lưỡng nội dung và số liệu." }
+        { "key": "A", "text": "Rất đúng, tôi ghét sự lặp lại." },
+        { "key": "B", "text": "Khá đúng, tôi thay đổi theo mùa/xu hướng." },
+        { "key": "C", "text": "Hiếm khi, tôi thích sự ổn định hơn." },
+        { "key": "D", "text": "Không bao giờ, tôi trung thành với một kiểu." }
       ]
     },
     {
       "id": 10,
-      "content": "Nếu được tham gia một dự án tình nguyện, bạn muốn làm gì?",
+      "content": "Bạn có thường xuyên tham gia các hoạt động thiện nguyện hoặc công tác xã hội tại địa phương không?",
       "options": [
-        { "key": "A", "text": "Xây dựng hệ thống, sửa chữa cơ sở vật chất." },
-        { "key": "B", "text": "Thiết kế poster, chụp ảnh, quay phim truyền thông." },
-        { "key": "C", "text": "Trực tiếp dạy học, chăm sóc hoặc tư vấn cho mọi người." },
-        { "key": "D", "text": "Quản lý quỹ, hậu cần và sắp xếp nhân sự." }
+        { "key": "A", "text": "Rất thường xuyên, tôi là thành viên tích cực." },
+        { "key": "B", "text": "Thỉnh thoảng, khi có người rủ." },
+        { "key": "C", "text": "Hiếm khi, tôi bận rộn việc cá nhân." },
+        { "key": "D", "text": "Chưa bao giờ tham gia." }
       ]
     },
     {
       "id": 11,
-      "content": "Bạn có thường xuyên quan tâm đến các vấn đề xã hội, tâm lý con người không?",
+      "content": "Bạn có ấp ủ ý định sẽ tự mở một cửa hàng kinh doanh hoặc khởi nghiệp công ty riêng trong tương lai không?",
       "options": [
-        { "key": "A", "text": "Ít quan tâm, tôi quan tâm đến khoa học công nghệ hơn." },
-        { "key": "B", "text": "Quan tâm theo hướng cảm xúc và nghệ thuật phản ánh." },
-        { "key": "C", "text": "Rất quan tâm, tôi luôn muốn hiểu và giúp đỡ người khác." },
-        { "key": "D", "text": "Quan tâm ở khía cạnh luật pháp và trật tự xã hội." }
+        { "key": "A", "text": "Chắc chắn, đó là mục tiêu lớn nhất của tôi." },
+        { "key": "B", "text": "Có nghĩ tới, nhưng còn lo sợ rủi ro." },
+        { "key": "C", "text": "Mơ hồ, tôi chưa xác định rõ." },
+        { "key": "D", "text": "Không, tôi thích đi làm thuê ổn định hơn." }
       ]
     },
     {
       "id": 12,
-      "content": "Bạn thích đọc loại sách báo hoặc tài liệu nào?",
+      "content": "Bạn có giỏi trong việc ghi chép chi tiêu, quản lý ngân sách cá nhân hoặc tính toán số liệu chi tiết không?",
       "options": [
-        { "key": "A", "text": "Tạp chí khoa học, công nghệ, khám phá." },
-        { "key": "B", "text": "Tiểu thuyết, truyện tranh, tạp chí thời trang/nghệ thuật." },
-        { "key": "C", "text": "Sách hạt giống tâm hồn, kỹ năng sống, tâm lý học." },
-        { "key": "D", "text": "Sách kinh doanh, đầu tư, tiểu sử doanh nhân." }
+        { "key": "A", "text": "Rất giỏi, tôi làm rất tỉ mỉ và chính xác." },
+        { "key": "B", "text": "Khá ổn, tôi nắm được các con số cơ bản." },
+        { "key": "C", "text": "Tạm được, đôi khi vẫn hay quên/sai sót." },
+        { "key": "D", "text": "Rất tệ, tôi ghét làm việc với con số." }
       ]
     },
     {
       "id": 13,
-      "content": "Khi phải đưa ra một quyết định quan trọng, bạn thường làm gì?",
+      "content": "Bạn có thích làm việc trực tiếp với động vật, cây cối hoặc thiên nhiên hoang dã không?",
       "options": [
-        { "key": "A", "text": "Liệt kê điểm mạnh, điểm yếu và phân tích logic." },
-        { "key": "B", "text": "Nghe theo tiếng gọi của con tim và cảm hứng lúc đó." },
-        { "key": "C", "text": "Tham khảo ý kiến của những người tin cậy." },
-        { "key": "D", "text": "Cân nhắc rủi ro và chọn phương án an toàn, hiệu quả nhất." }
+        { "key": "A", "text": "Rất thích, đó là môi trường lý tưởng của tôi." },
+        { "key": "B", "text": "Khá thích, nhưng chỉ coi là sở thích cuối tuần." },
+        { "key": "C", "text": "Bình thường, không quá đặc biệt." },
+        { "key": "D", "text": "Không thích, tôi sợ bẩn hoặc côn trùng." }
       ]
     },
     {
       "id": 14,
-      "content": "Bạn có thích công việc yêu cầu sự tỉ mỉ, chi tiết không?",
+      "content": "Bạn có thích xem các kênh truyền hình/video về khám phá khoa học, vũ trụ hay công nghệ mới (như Discovery, TED) không?",
       "options": [
-        { "key": "A", "text": "Có, đặc biệt là các chi tiết kỹ thuật." },
-        { "key": "B", "text": "Không, tôi thích nhìn bức tranh tổng thể hơn." },
-        { "key": "C", "text": "Tùy thuộc vào việc đó có giúp ích cho ai không." },
-        { "key": "D", "text": "Rất thích, tôi không muốn bỏ sót bất kỳ lỗi nhỏ nào." }
+        { "key": "A", "text": "Rất thích, tôi theo dõi hàng ngày." },
+        { "key": "B", "text": "Thỉnh thoảng xem khi thấy tiêu đề hay." },
+        { "key": "C", "text": "Hiếm khi xem, tôi thích giải trí hơn." },
+        { "key": "D", "text": "Không bao giờ xem." }
       ]
     },
     {
       "id": 15,
-      "content": "Mục tiêu nghề nghiệp lớn nhất của bạn là gì?",
+      "content": "Bạn có thường đưa ra những ý tưởng độc đáo, khác lạ mà mọi người xung quanh ít nghĩ tới không?",
       "options": [
-        { "key": "A", "text": "Trở thành chuyên gia hàng đầu trong lĩnh vực kỹ thuật/nghiên cứu." },
-        { "key": "B", "text": "Tạo ra những tác phẩm để đời hoặc phong cách riêng biệt." },
-        { "key": "C", "text": "Mang lại giá trị tốt đẹp cho cộng đồng và giúp đỡ nhiều người." },
-        { "key": "D", "text": "Trở thành nhà lãnh đạo, quản lý giỏi hoặc doanh nhân thành đạt." }
+        { "key": "A", "text": "Rất thường xuyên, tôi có tư duy khác biệt." },
+        { "key": "B", "text": "Thỉnh thoảng, trong lĩnh vực tôi am hiểu." },
+        { "key": "C", "text": "Hiếm khi, tôi hay làm theo số đông." },
+        { "key": "D", "text": "Không, tôi thích những gì thực tế, sẵn có." }
+      ]
+    },
+    {
+      "id": 16,
+      "content": "Bạn có thấy mình có khả năng giảng giải, hướng dẫn cho người khác hiểu bài/vấn đề một cách dễ dàng không?",
+      "options": [
+        { "key": "A", "text": "Rất đúng, bạn bè hay nhờ tôi chỉ bài." },
+        { "key": "B", "text": "Khá đúng, tôi cần chút thời gian chuẩn bị." },
+        { "key": "C", "text": "Bình thường, đôi khi tôi diễn đạt hơi khó hiểu." },
+        { "key": "D", "text": "Không, tôi không có khiếu sư phạm." }
+      ]
+    },
+    {
+      "id": 17,
+      "content": "Bạn có thích cảm giác cạnh tranh và nỗ lực hết mình để giành chiến thắng trong công việc/học tập không?",
+      "options": [
+        { "key": "A", "text": "Rất thích, cạnh tranh giúp tôi phát triển." },
+        { "key": "B", "text": "Khá thích, nhưng phải là cạnh tranh lành mạnh." },
+        { "key": "C", "text": "Không quan tâm lắm, tôi chỉ làm việc của mình." },
+        { "key": "D", "text": "Không thích, tôi thích sự hòa bình, nhường nhịn." }
+      ]
+    },
+    {
+      "id": 18,
+      "content": "Bạn có phải là người luôn tuân thủ đúng giờ giấc, quy định và kế hoạch đã đề ra không?",
+      "options": [
+        { "key": "A", "text": "Rất đúng, tôi cực kỳ kỷ luật." },
+        { "key": "B", "text": "Khá đúng, tôi cố gắng không vi phạm." },
+        { "key": "C", "text": "Tùy lúc, đôi khi tôi cũng hay 'cao su'." },
+        { "key": "D", "text": "Không, tôi sống khá tùy hứng." }
+      ]
+    },
+    {
+      "id": 19,
+      "content": "Bạn có khéo tay trong việc lắp ráp mô hình (Lego, Gundam) hoặc chế tạo đồ thủ công mỹ nghệ không?",
+      "options": [
+        { "key": "A", "text": "Rất khéo, sản phẩm của tôi rất đẹp." },
+        { "key": "B", "text": "Khá ổn, tôi làm được theo hướng dẫn." },
+        { "key": "C", "text": "Bình thường, tôi hay làm mất chi tiết." },
+        { "key": "D", "text": "Rất vụng về, tôi không làm được." }
+      ]
+    },
+    {
+      "id": 20,
+      "content": "Bạn có thích phân tích các số liệu thống kê để tìm ra xu hướng hoặc dự đoán kết quả tương lai không?",
+      "options": [
+        { "key": "A", "text": "Rất thích, tôi thấy các con số biết nói." },
+        { "key": "B", "text": "Khá thích, nếu nó phục vụ cho bài tập." },
+        { "key": "C", "text": "Bình thường, hơi đau đầu một chút." },
+        { "key": "D", "text": "Không thích, quá phức tạp với tôi." }
+      ]
+    },
+    {
+      "id": 21,
+      "content": "Bạn có nhạy cảm với cái đẹp và thường xuyên nhận xét về màu sắc, bố cục của mọi thứ xung quanh không?",
+      "options": [
+        { "key": "A", "text": "Rất đúng, tôi có mắt thẩm mỹ tốt." },
+        { "key": "B", "text": "Khá đúng, tôi biết cái nào đẹp/xấu." },
+        { "key": "C", "text": "Bình thường, tôi không để ý lắm." },
+        { "key": "D", "text": "Không, tôi xuề xòa sao cũng được." }
+      ]
+    },
+    {
+      "id": 22,
+      "content": "Bạn có dễ dàng cảm nhận được cảm xúc của người đối diện ngay cả khi họ không nói ra không?",
+      "options": [
+        { "key": "A", "text": "Rất dễ, tôi rất nhạy cảm và tinh tế." },
+        { "key": "B", "text": "Khá dễ, tôi thường đoán đúng." },
+        { "key": "C", "text": "Thỉnh thoảng, lúc đúng lúc sai." },
+        { "key": "D", "text": "Không, tôi khá vô tư nên ít nhận ra." }
+      ]
+    },
+    {
+      "id": 23,
+      "content": "Bạn có tự tin vào khả năng đàm phán, mặc cả để mua được món đồ với giá tốt nhất không?",
+      "options": [
+        { "key": "A", "text": "Rất tự tin, tôi hiếm khi bị mua đắt." },
+        { "key": "B", "text": "Khá tự tin, tôi biết cách thương lượng." },
+        { "key": "C", "text": "Bình thường, tôi ngại trả giá." },
+        { "key": "D", "text": "Không, người bán nói sao tôi nghe vậy." }
+      ]
+    },
+    {
+      "id": 24,
+      "content": "Bạn có thích công việc văn phòng liên quan đến soạn thảo văn bản, sắp xếp hồ sơ và lưu trữ dữ liệu không?",
+      "options": [
+        { "key": "A", "text": "Rất thích, tôi thấy thoải mái với việc đó." },
+        { "key": "B", "text": "Khá thích, đó là công việc ổn định." },
+        { "key": "C", "text": "Làm tạm thì được, lâu dài hơi chán." },
+        { "key": "D", "text": "Không thích, quá gò bó và tẻ nhạt." }
+      ]
+    },
+    {
+      "id": 25,
+      "content": "Bạn có thích sử dụng, vận hành các loại máy móc công nghiệp hoặc phương tiện giao thông cỡ lớn không?",
+      "options": [
+        { "key": "A", "text": "Rất thích, tôi thấy chúng rất ngầu." },
+        { "key": "B", "text": "Khá thích, muốn thử lái một lần." },
+        { "key": "C", "text": "Hơi sợ, nhưng có thể học." },
+        { "key": "D", "text": "Không thích, quá nguy hiểm." }
+      ]
+    },
+    {
+      "id": 26,
+      "content": "Bạn có hứng thú với việc thực hiện các thí nghiệm hóa học hoặc quan sát mẫu vật dưới kính hiển vi không?",
+      "options": [
+        { "key": "A", "text": "Rất hứng thú, tôi muốn làm nhà khoa học." },
+        { "key": "B", "text": "Khá hứng thú, các phản ứng rất đẹp." },
+        { "key": "C", "text": "Bình thường, chỉ thích xem chứ ngại làm." },
+        { "key": "D", "text": "Không thích, sợ hóa chất độc hại." }
+      ]
+    },
+    {
+      "id": 27,
+      "content": "Bạn có thích tham gia các hoạt động biểu diễn như đóng kịch, ca hát hoặc nhảy múa trên sân khấu không?",
+      "options": [
+        { "key": "A", "text": "Rất thích, ánh đèn sân khấu là đam mê." },
+        { "key": "B", "text": "Khá thích, nếu diễn cùng nhóm bạn." },
+        { "key": "C", "text": "Hơi ngại, tôi chỉ thích làm khán giả." },
+        { "key": "D", "text": "Rất sợ, tôi bị hội chứng sợ đám đông." }
+      ]
+    },
+    {
+      "id": 28,
+      "content": "Bạn có kiên nhẫn khi làm việc với trẻ em hoặc người già cần sự chăm sóc đặc biệt không?",
+      "options": [
+        { "key": "A", "text": "Rất kiên nhẫn, tôi yêu quý họ." },
+        { "key": "B", "text": "Khá kiên nhẫn, tùy vào mức độ ngoan ngoãn." },
+        { "key": "C", "text": "Bình thường, lâu quá thì tôi hay cáu." },
+        { "key": "D", "text": "Không, tôi rất thiếu kiên nhẫn." }
+      ]
+    },
+    {
+      "id": 29,
+      "content": "Bạn có sẵn sàng chấp nhận rủi ro tài chính để đầu tư vào một dự án có tiềm năng sinh lời lớn không?",
+      "options": [
+        { "key": "A", "text": "Sẵn sàng, liều ăn nhiều." },
+        { "key": "B", "text": "Cân nhắc kỹ, nếu rủi ro vừa phải." },
+        { "key": "C", "text": "Hơi e ngại, tôi thích an toàn hơn." },
+        { "key": "D", "text": "Không bao giờ, tôi sợ mất tiền." }
+      ]
+    },
+    {
+      "id": 30,
+      "content": "Bạn có cảm thấy an tâm hơn khi làm việc trong một tổ chức có hệ thống cấp bậc và quy trình thăng tiến rõ ràng không?",
+      "options": [
+        { "key": "A", "text": "Rất an tâm, tôi biết mình cần phấn đấu gì." },
+        { "key": "B", "text": "Khá an tâm, môi trường chuyên nghiệp." },
+        { "key": "C", "text": "Bình thường, quan trọng là lương thưởng." },
+        { "key": "D", "text": "Không thích, tôi thấy gò bó quan liêu." }
+      ]
+    },
+    {
+      "id": 31,
+      "content": "Bạn có muốn tạo ra những sản phẩm thực tế cầm nắm được (bàn ghế, quần áo, máy móc) hơn là các ý tưởng trên giấy không?",
+      "options": [
+        { "key": "A", "text": "Rất muốn, nhìn thành quả thật rất vui." },
+        { "key": "B", "text": "Khá muốn, nhưng cần hỗ trợ kỹ thuật." },
+        { "key": "C", "text": "Sao cũng được, miễn là có ích." },
+        { "key": "D", "text": "Không, tôi thích làm việc tư duy hơn." }
+      ]
+    },
+    {
+      "id": 32,
+      "content": "Bạn có thích giải quyết các vấn đề bằng cách suy luận logic và bằng chứng cụ thể thay vì cảm tính không?",
+      "options": [
+        { "key": "A", "text": "Rất thích, mọi thứ phải có logic." },
+        { "key": "B", "text": "Khá thích, nhưng đôi khi vẫn tin trực giác." },
+        { "key": "C", "text": "Bình thường, kết hợp cả hai." },
+        { "key": "D", "text": "Không, tôi hay quyết định theo cảm xúc." }
+      ]
+    },
+    {
+      "id": 33,
+      "content": "Bạn có ghét việc phải làm đi làm lại một công việc theo quy trình dập khuôn mỗi ngày không?",
+      "options": [
+        { "key": "A", "text": "Rất ghét, tôi sẽ nghỉ việc ngay." },
+        { "key": "B", "text": "Khá không thích, dễ gây nhàm chán." },
+        { "key": "C", "text": "Chấp nhận được, vì đó là công việc." },
+        { "key": "D", "text": "Không ghét, tôi thấy vậy an nhàn." }
+      ]
+    },
+    {
+      "id": 34,
+      "content": "Bạn có cảm thấy hạnh phúc khi công việc của mình mang lại giá trị trực tiếp cho cộng đồng và xã hội không?",
+      "options": [
+        { "key": "A", "text": "Rất hạnh phúc, đó là lý tưởng sống." },
+        { "key": "B", "text": "Khá vui, cảm thấy mình có ích." },
+        { "key": "C", "text": "Bình thường, đi làm vì thu nhập là chính." },
+        { "key": "D", "text": "Không quan tâm lắm đến vĩ mô." }
+      ]
+    },
+    {
+      "id": 35,
+      "content": "Bạn có thích xem các chương trình thực tế về khởi nghiệp như 'Shark Tank' để học hỏi tư duy kinh doanh không?",
+      "options": [
+        { "key": "A", "text": "Rất thích, tôi không bỏ lỡ tập nào." },
+        { "key": "B", "text": "Thỉnh thoảng xem thấy cũng hay." },
+        { "key": "C", "text": "Hiếm khi xem, chỉ lướt qua." },
+        { "key": "D", "text": "Không xem, không hứng thú." }
+      ]
+    },
+    {
+      "id": 36,
+      "content": "Bạn có thích làm việc trong môi trường yên tĩnh, ít tiếng ồn và ít sự xáo trộn bất ngờ không?",
+      "options": [
+        { "key": "A", "text": "Rất thích, tôi mới tập trung được." },
+        { "key": "B", "text": "Khá thích, nhưng ồn chút cũng không sao." },
+        { "key": "C", "text": "Bình thường, tôi dễ thích nghi." },
+        { "key": "D", "text": "Không, quá yên tĩnh làm tôi buồn ngủ." }
+      ]
+    },
+    {
+      "id": 37,
+      "content": "Bạn có ngại khi phải làm việc ngoài trời nắng gió hoặc tay chân bị lấm bẩn dầu mỡ không?",
+      "options": [
+        { "key": "A", "text": "Không ngại chút nào, đó là chuyện nhỏ." },
+        { "key": "B", "text": "Hơi ngại, nhưng cần thì vẫn làm." },
+        { "key": "C", "text": "Khá ngại, tôi ưu tiên việc trong nhà." },
+        { "key": "D", "text": "Rất ngại, tôi không chịu được bẩn/nắng." }
+      ]
+    },
+    {
+      "id": 38,
+      "content": "Bạn có thích tìm tòi, nghiên cứu sâu về một chủ đề hẹp (như lịch sử cổ đại, gien di truyền...) không?",
+      "options": [
+        { "key": "A", "text": "Rất thích, tôi có thể đọc cả ngày." },
+        { "key": "B", "text": "Khá thích, nếu chủ đề đó thú vị." },
+        { "key": "C", "text": "Bình thường, biết sơ sơ là được." },
+        { "key": "D", "text": "Không thích, đau đầu lắm." }
+      ]
+    },
+    {
+      "id": 39,
+      "content": "Bạn có muốn công việc cho phép bạn ăn mặc tự do, nhuộm tóc hoặc thể hiện cá tính riêng không?",
+      "options": [
+        { "key": "A", "text": "Rất muốn, đó là tự do cá nhân." },
+        { "key": "B", "text": "Khá muốn, môi trường cởi mở sẽ tốt hơn." },
+        { "key": "C", "text": "Không quan trọng, mặc đồng phục cũng được." },
+        { "key": "D", "text": "Không, tôi thích sự chỉnh tề, trang trọng." }
+      ]
+    },
+    {
+      "id": 40,
+      "content": "Bạn có thích làm việc nhóm (teamwork) và trao đổi ý kiến liên tục với mọi người không?",
+      "options": [
+        { "key": "A", "text": "Rất thích, làm cùng nhau vui hơn." },
+        { "key": "B", "text": "Khá thích, hỗ trợ nhau tốt hơn." },
+        { "key": "C", "text": "Tùy người, hợp tính thì mới thích." },
+        { "key": "D", "text": "Không thích, tôi làm việc độc lập tốt hơn." }
+      ]
+    },
+    {
+      "id": 41,
+      "content": "Bạn có tự tin vào khả năng chốt sale hoặc thuyết phục người khác thay đổi ý định của họ không?",
+      "options": [
+        { "key": "A", "text": "Rất tự tin, tôi có khiếu ăn nói." },
+        { "key": "B", "text": "Khá tự tin, tôi thường thành công." },
+        { "key": "C", "text": "Bình thường, lúc được lúc không." },
+        { "key": "D", "text": "Không tự tin, tôi hay bị người khác thuyết phục." }
+      ]
+    },
+    {
+      "id": 42,
+      "content": "Bạn có phải là người cẩn trọng, luôn kiểm tra lại mọi thứ (check-list) trước khi bàn giao công việc không?",
+      "options": [
+        { "key": "A", "text": "Rất đúng, sai một ly đi một dặm." },
+        { "key": "B", "text": "Khá đúng, tôi thường kiểm tra sơ bộ." },
+        { "key": "C", "text": "Thỉnh thoảng, nếu có thời gian." },
+        { "key": "D", "text": "Không, tôi hay làm xong là nộp luôn." }
+      ]
+    },
+    {
+      "id": 43,
+      "content": "Bạn có tin vào những gì 'mắt thấy tai nghe' và thực tế hơn là những lý thuyết mơ hồ không?",
+      "options": [
+        { "key": "A", "text": "Rất tin, thực tế là quan trọng nhất." },
+        { "key": "B", "text": "Khá tin, nhưng lý thuyết cũng cần thiết." },
+        { "key": "C", "text": "Bình thường, cần cân bằng cả hai." },
+        { "key": "D", "text": "Không, tôi thích những ý tưởng trừu tượng." }
+      ]
+    },
+    {
+      "id": 44,
+      "content": "Bạn có thường đặt câu hỏi phản biện 'Tại sao?' khi nghe một thông tin mới không?",
+      "options": [
+        { "key": "A", "text": "Luôn luôn, tôi có tư duy phản biện." },
+        { "key": "B", "text": "Thường xuyên, tôi không tin ngay." },
+        { "key": "C", "text": "Thỉnh thoảng, nếu tin đó lạ quá." },
+        { "key": "D", "text": "Hiếm khi, tôi thường chấp nhận thông tin." }
+      ]
+    },
+    {
+      "id": 45,
+      "content": "Bạn có phải là người giàu trí tưởng tượng và thường mơ mộng về những thế giới khác lạ không?",
+      "options": [
+        { "key": "A", "text": "Rất đúng, đầu óc tôi luôn bay bổng." },
+        { "key": "B", "text": "Khá đúng, tôi hay suy nghĩ mung lung." },
+        { "key": "C", "text": "Bình thường, đôi khi lúc rảnh rỗi." },
+        { "key": "D", "text": "Không, tôi sống rất thực tế." }
       ]
     }
   ]
