@@ -100,13 +100,15 @@ Nếu toạ độ này được chọn làm nơi khởi tạo sự nghiệp, nh�
 * **Pro (Lv.20-50):** [Vị trí chuyên viên cấp cao/Quản lý].
 * **Legend (Lv.Max):** [Đỉnh cao sự nghiệp/C-Level/Partner].
 
-### 5. 🎯 GỢI Ý 2 NGÀNH HỌC PHỤ ĐỒNG HÀNH
-Ngoài ngành chính, hệ thống cũng phát hiện tín hiệu từ 2 ngành học phụ có thể tạo ra "combo skill" cực mạnh với bạn:
+### 5. 🎯 GỢI Ý 2 NGÀNH HỌC PHỤ
+Ngoài ngành chính, hệ thống cũng phát hiện tín hiệu từ 2 ngành học phụ có thể matching cực mạnh với bạn:
 
 * **🔸 Ngành học phụ #1: [TÊN NGÀNH HỌC PHỤ 1]**
+
     *Lý do khớp:* [Giải thích ngắn gọn sự liên quan/bổ trợ].
     
 * **🔸 Ngành học phụ #2: [TÊN NGÀNH HỌC PHỤ 2]**
+
     *Lý do khớp:* [Giải thích ngắn gọn sự liên quan/bổ trợ].
 
 ---
