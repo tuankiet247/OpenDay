@@ -66,7 +66,7 @@
     },
     {
       "id": 7,
-      "content": "Bạn có dự định thi vào các trường kỹ thuật (Bách Khoa, Công nghiệp...) hoặc các ngành liên quan đến máy móc, xây dựng không?",
+      "content": "Bạn có dự định thi vào các trường kỹ thuật hoặc các ngành liên quan đến máy móc, xây dựng không?",
       "options": [
         { "key": "A", "text": "Đó là nguyện vọng 1 của mình." },
         { "key": "B", "text": "Đang cân nhắc, thấy cũng phù hợp." },
