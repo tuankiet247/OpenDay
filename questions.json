@@ -386,7 +386,7 @@
     },
     {
       "id": 39,
-      "content": "Bạn có muốn học ở một trường đại học cho phép sinh viên nhuộm tóc, ăn mặc tự do (như RMIT, FPT, Văn Lang...) không?",
+      "content": "Bạn có muốn học ở một trường đại học cho phép sinh viên nhuộm tóc, ăn mặc tự do không?",
       "options": [
         { "key": "A", "text": "Rất muốn, môi trường đó mới thoải mái." },
         { "key": "B", "text": "Thích, nhưng quan trọng là chất lượng đào tạo." },
